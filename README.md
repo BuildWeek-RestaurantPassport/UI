@@ -1,4 +1,4 @@
-# UI/Marketing
+# UI
 
 ## Restaurant Passport
 ![alt text](https://cdn2.atlantamagazine.com/wp-content/uploads/sites/4/2019/07/RestaurantEugene01_courtesy.jpg "alt-text")
@@ -49,7 +49,7 @@
 - links
 
 ### Useful Docs
-* [Culture Document](url)
+* [Culture Document](https://www.notion.so/lambdaschool/Part-Time-Build-Sprint-Culture-Document-e344d84c5f4445709e995ed57b28c24e)
 * [Trello Board](https://trello.com/b/vaM1nrSn/build-week-restaurant-passport)
 * [Schedule and Daily Milestones](url)
 
