@@ -1,0 +1,27 @@
+.home {
+    .top-section {
+        &:nth-child(-n+1) {
+            display: none;
+        }
+    }
+
+    .gallery {
+        .flex(column, space-between);
+
+        div, h2 {
+            width: 45%;
+            .flex(row, center);
+            align-items: center;
+        }
+
+        div {
+            background-color: lighten(grey, 35%);
+        }
+
+        h2 {
+            background-color: darkgrey;
+        }
+    }
+
+    
+}
