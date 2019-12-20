@@ -3,17 +3,22 @@ footer {
     .flex(row, space-between);
     align-items: center;
     background-color: #F0F4F7;
+    margin: @margin;
 
     p {
         text-align: center;
         // background-color: green;
         font-size: 1rem;
-        padding: 10px 0;
+        padding: @padding;
     }
 
-    img {
+    a {
         width: 5%;
-        height: 5%;
-        object-fit: contain;
+
+        img {
+            width: 75%;
+            height: 75%;
+            object-fit: contain;
+        }
     }
 }

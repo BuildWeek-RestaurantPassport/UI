@@ -4,10 +4,20 @@
     justify-content: @justify;
 }
 
-.keyframes(@name; @arguments) {
-	@keyframes @name { @arguments(); }
-};
-
-.animation(@arguments) {
-	animation: @arguments;
+.button(@width, @height) {
+    .flex(row, center);
+    align-items: center;
+    width: @width;
+    height: @height;
+    background-color: #6558F5;
+    color: white;
+    border-radius: 12px;
 }
+
+// .keyframes(@name; @arguments) {
+// 	@keyframes @name { @arguments(); }
+// };
+
+// .animation(@arguments) {
+// 	animation: @arguments;
+// }
