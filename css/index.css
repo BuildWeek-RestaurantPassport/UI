@@ -1,3 +1,11 @@
+@keyframes display {
+  33% {
+    content: "Want to discover new eateries?";
+  }
+  66% {
+    content: "View the restaurants you've been to?";
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -136,26 +144,30 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Indie Flower', cursive;
-}
-h1 {
-  font-size: 2.5rem;
-}
-h2 {
-  font-size: 1.5rem;
-}
-p {
-  line-height: 1.5;
-  font-size: 1.2rem;
-}
 .container {
   width: 95%;
   margin: 0 auto;
+}
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5 {
+  font-family: 'Indie Flower', cursive;
+}
+.container h1 {
+  font-size: 2.5rem;
+}
+.container h2 {
+  font-size: 1.5rem;
+}
+.container p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+.container a {
+  text-decoration: none;
+  color: white;
 }
 nav {
   margin: 10px 0;
@@ -197,6 +209,12 @@ footer a img {
   justify-content: space-around;
   align-items: center;
 }
+.home .top-section h1:before {
+  content: "Tired of deciding what to eat?";
+  animation-name: display;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
 .home .top-section .btn {
   display: flex;
   flex-direction: row;
@@ -207,10 +225,6 @@ footer a img {
   background-color: #6558F5;
   color: white;
   border-radius: 12px;
-}
-.home a {
-  text-decoration: none;
-  color: white;
 }
 .home .gallery {
   display: flex;

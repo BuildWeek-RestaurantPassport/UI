@@ -8,14 +8,18 @@
         .flex(column, space-around);
         align-items: center;
 
+        h1 {
+            &:before {
+                content: "Tired of deciding what to eat?";
+                animation-name: display;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+            }
+        }
+
         .btn {
             .button(14rem, 3rem);
         }
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
     }
 
     .gallery {
