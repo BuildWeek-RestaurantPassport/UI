@@ -1,0 +1,296 @@
+@phone (max-width: 500px);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background-image: url('https://wallpapercave.com/wp/wp3841204.jpg');
+  padding: 20px;
+}
+header {
+  border: 1px solid black;
+  margin-top: 15px;
+  padding: 20px 20px;
+  background-color: #627e91;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2px 2px 2px 2px;
+}
+header nav a {
+  margin: 2px 2px 2px 2px;
+  background-color: purple;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 4px;
+}
+nav a:hover {
+  margin: 2px 2px 2px 2px;
+  background-color: purple;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 4px;
+}
+/*img {
+   max-width: 100%;  
+ }*/
+footer {
+  margin: 20px 30px 90px 30px;
+}
+.copyright {
+  text-align: center;
+  font-size: 14px;
+}
+.container {
+  background-color: #FFFFFF;
+  max-width: 880px;
+  width: 900px;
+  margin: auto;
+  box-shadow: 10px 10px 5px 20px  black;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 0 50px 0;
+}
+.about-services {
+  margin: 30px 0 0 30px;
+}
+.about-services h1 {
+  font-size: 24px;
+  color: red;
+  background: #C0C0C0;
+}
+.content {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 30px;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  border-bottom: 5px #800080;
+  background: #C0C0C0;
+  margin: 30px;
+  padding-bottom: 40px;
+}
+h2 {
+  color: #9932CC;
+  margin-left: 105px;
+}
+.about-item {
+  margin: 40px 0 0 0;
+  padding: 20px;
+  background: #000000;
+  border: 5px solid #800080;
+  width: 400px;
+  border-radius: 30px;
+}
+.about-item p {
+  line-height: 18px;
+  color: #FF00FF;
+}
+button:hover {
+  margin-left: 115px;
+  border: 1px solid red;
+  font-size: 16px;
+  padding: 5px 40px 5px 40px;
+  border: 1px solid black;
+}
+.about-item button {
+  background: #DDA0DD;
+  margin-top: 20px;
+  font-size: 12px;
+  padding: 10px;
+  border: 2px solid #FF00FF;
+  border-radius: 5px;
+}
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 40px 0;
+}
+.upper-items {
+  width: 400px;
+}
+.three-col {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 40px 0;
+}
+.lower-items {
+  width: 250px;
+}
