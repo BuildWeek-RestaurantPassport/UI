@@ -28,21 +28,16 @@
     padding: 0 2.5rem;
   }
   
-  .about-services {
-    margin: 30px 0 0 30px;
-   
-  }
-  @phone {
-    height: auto;
-    width: 90%;
-    margin-left: 2.3rem;
-  }
+ 
+ 
   .about-services  {
        font-size: 15px;
-     color:@shark;
-     background: #C0C0C0;
+       color:@shark;
+       background: #C0C0C0;
+       padding: 20px;
+       margin: 0 auto;
   }
-  @phone {
+   @phone {
     width: 100%;
     padding: 0 2.5rem;
   }
@@ -88,28 +83,36 @@
   
   .about-item p {
     line-height: 18px;
-    color: #FF00FF;
+    color: @shark;
   }
   
   button {
+    
     margin-left: 115px;
-    border: 1px solid red;
+    
     font-size: 16px;
-    padding: 5px 40px 5px 40px;
+    padding: 5px;
     border: 1px solid black;
     
   }
-  .about-item button {
+  .about-item button  {
+    display: flex;
+    justify-content:center;
+    align-items: center;
     background:#DDA0DD;
     margin-top: 20px;
     font-size: 12px;
     padding: 10px;
     border: 2px solid #FF00FF;  
-    border-radius: 5px;
+    border-radius: 10px;
   }
-  .about-item button:hover{
+  .about-item button:hover  {
     margin-left: 115px;
    font-size: 16px;
+   padding: 10px;
+   background: purple;
+   border: 2px solid pink;
+   border-radius: 10px;  
   }
   @phone {
     width: 35rem;
