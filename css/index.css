@@ -169,6 +169,9 @@ body {
   padding: 20px;
 }
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   border: 1px solid black;
   margin-top: 15px;
   padding: 20px 20px;
@@ -177,24 +180,14 @@ header {
 header nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin: 2px 2px 2px 2px;
+  justify-content: flex-end;
+  align-content: center;
 }
 header nav a {
-  margin: 2px 2px 2px 2px;
   background-color: purple;
   color: white;
   font-size: 14px;
-  text-decoration: none;
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 4px;
-}
-nav a:hover {
-  margin: 2px 2px 2px 2px;
-  background-color: purple;
-  color: white;
-  font-size: 14px;
+  text-align: center;
   text-decoration: none;
   border: 2px solid black;
   border-radius: 10px;
@@ -212,8 +205,7 @@ footer {
 }
 .container {
   background-color: #FFFFFF;
-  max-width: 880px;
-  width: 900px;
+  max-width: 900px;
   margin: auto;
   box-shadow: 10px 10px 5px 20px  black;
 }
