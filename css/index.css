@@ -179,11 +179,17 @@ header {
   padding: 20px 20px;
   background-color: #627e91;
 }
+@phone {
+  margin: 1.5rem 0 0 5.7rem;
+}
 header nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-content: center;
+}
+@phone {
+  margin-right: 5.8rem;
 }
 header nav a {
   background-color: purple;
@@ -205,66 +211,102 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fjalla One'), local('FjallaOne-Regular'), url(https://fonts.gstatic.com/s/fjallaone/v7/Yq6R-LCAWCX3-6Ky7FAFrOF6lw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I94.ttf) format('truetype');
+}
 .container {
-  background-color: #FFFFFF;
+  background-color: #FFEBCD;
   max-width: 900px;
   margin: auto;
   box-shadow: 10px 10px 5px 20px  black;
 }
-.hero {
+@phone {
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 10px;
+}
+.container .hero {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   margin: 50px 0 50px 0;
 }
-.about-services {
+@phone {
+  width: 100%;
+  padding: 0 2.5rem;
+}
+.container .about-services {
   margin: 30px 0 0 30px;
 }
-.about-services h1 {
-  font-size: 24px;
-  color: red;
+@phone {
+  height: auto;
+  width: 90%;
+  margin-left: 2.3rem;
+}
+.container .about-services {
+  font-size: 15px;
+  color: #212529;
   background: #C0C0C0;
 }
-.content {
+@phone {
+  width: 100%;
+  padding: 0 2.5rem;
+}
+.container .content {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   margin: 30px;
 }
-.about-content {
+.container .about-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   border-top: 1px solid black;
   border-bottom: 5px #800080;
-  background: #C0C0C0;
+  background-image: url('https://wallpapercave.com/wp/wp3841150.jpg');
+  background: cover;
+  font-family: roboto;
   margin: 30px;
   padding-bottom: 40px;
 }
-h2 {
-  color: #9932CC;
-  margin-left: 105px;
+@phone {
+  height: auto;
+  width: 90%;
+  margin-left: 2.3rem;
 }
-.about-item {
+.container .about-item {
   margin: 40px 0 0 0;
   padding: 20px;
-  background: #000000;
+  background: #FFEBCD;
   border: 5px solid #800080;
   width: 400px;
   border-radius: 30px;
 }
-.about-item p {
+.container .about-item p {
   line-height: 18px;
   color: #FF00FF;
 }
-button:hover {
+.container button {
   margin-left: 115px;
   border: 1px solid red;
   font-size: 16px;
   padding: 5px 40px 5px 40px;
   border: 1px solid black;
 }
-.about-item button {
+.container .about-item button {
   background: #DDA0DD;
   margin-top: 20px;
   font-size: 12px;
@@ -272,19 +314,34 @@ button:hover {
   border: 2px solid #FF00FF;
   border-radius: 5px;
 }
-.two-col {
+.container .about-item button:hover {
+  margin-left: 115px;
+  font-size: 16px;
+}
+@phone {
+  width: 35rem;
+  margin-left: 2.5rem;
+}
+.container .two-col {
   display: flex;
   justify-content: space-between;
   margin: 40px 0 40px 0;
 }
-.upper-items {
+@phone {
+  flex-direction: column;
+}
+.container .upper-items {
   width: 400px;
 }
-.three-col {
+.container .three-col {
   display: flex;
   justify-content: space-between;
   margin: 40px 0 40px 0;
 }
-.lower-items {
+.container .lower-items {
   width: 250px;
+}
+@phone {
+  width: 100%;
+  padding: 0 5rem;
 }

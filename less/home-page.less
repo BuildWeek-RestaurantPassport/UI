@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Nunito+Sans&display=swap');
 
 .container {
-	background-color: @white;
-  max-width: 900px;
-  
+	 background-color: @sandy-beach;
+    max-width: 900px;
+    
     margin: auto;
     box-shadow:10px 10px 5px 20px  black;
-}
+
   
-    
+   @phone {
+      flex-direction: column;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-left: 10px;
+    }
   
   .hero {
     display: flex;
@@ -17,19 +23,29 @@
     margin: 50px 0 50px 0;
     
   }
-  
+   @phone {
+    width: 100%;
+    padding: 0 2.5rem;
+  }
   
   .about-services {
     margin: 30px 0 0 30px;
    
   }
-  
-  .about-services h1 {
-       font-size: 24px;
-     color: red;
+  @phone {
+    height: auto;
+    width: 90%;
+    margin-left: 2.3rem;
+  }
+  .about-services  {
+       font-size: 15px;
+     color:@shark;
      background: #C0C0C0;
   }
-  
+  @phone {
+    width: 100%;
+    padding: 0 2.5rem;
+  }
   
   .content {
     border-top: 1px solid black;
@@ -44,19 +60,26 @@
     justify-content: space-between;  
     border-top: 1px solid black;
     border-bottom: 5px RGB(128, 0, 128); 
-     background: #C0C0C0;
+    background-image: url( 'https://wallpapercave.com/wp/wp3841150.jpg');
+    background: cover;
+    font-family: roboto;
     margin: 30px;
     padding-bottom: 40px;
     
   }
-  h2{
-    color: #9932CC;
-    margin-left: 105px;
+  @phone {
+    height: auto;
+    width: 90%;
+    margin-left: 2.3rem;
   }
+  //h2{
+    //color: #9932CC;
+   // margin-left: 105px;
+  //}
   .about-item  {
     margin: 40px 0 0 0;
     padding: 20px;
-    background: #000000;
+    background: @sandy-beach;
   
     border: 5px solid RGB(128, 0, 128);
     width: 400px;
@@ -68,7 +91,7 @@
     color: #FF00FF;
   }
   
-  button:hover {
+  button {
     margin-left: 115px;
     border: 1px solid red;
     font-size: 16px;
@@ -84,13 +107,22 @@
     border: 2px solid #FF00FF;  
     border-radius: 5px;
   }
-  
+  .about-item button:hover{
+    margin-left: 115px;
+   font-size: 16px;
+  }
+  @phone {
+    width: 35rem;
+    margin-left: 2.5rem; 
+  }
   .two-col {
     display: flex;
     justify-content: space-between;
     margin: 40px 0 40px 0;
   }
-  
+   @phone {
+    flex-direction: column;
+  }
   .upper-items {
    width: 400px;
   }
@@ -104,4 +136,8 @@
   .lower-items {
     width: 250px;
   }
-  
+  @phone {
+    width: 100%;
+    padding: 0 5rem;
+  }
+}
