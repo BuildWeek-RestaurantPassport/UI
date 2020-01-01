@@ -3,7 +3,15 @@
     content: "Want to discover new eateries?";
   }
   66% {
-    content: "View the restaurants you've been to?";
+    content: "View restaurants you've visited?";
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -156,7 +164,7 @@ body {
   font-family: 'Indie Flower', cursive;
 }
 .container h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 .container h2 {
   font-size: 1.5rem;
@@ -164,10 +172,6 @@ body {
 .container p {
   line-height: 1.5;
   font-size: 1.2rem;
-}
-.container a {
-  text-decoration: none;
-  color: white;
 }
 nav {
   margin: 10px 0;
@@ -193,15 +197,20 @@ footer p {
 }
 footer a {
   width: 5%;
+  color: #6558F5 !important;
 }
 footer a img {
   width: 75%;
   height: 75%;
   object-fit: contain;
 }
+.home a {
+  text-decoration: none;
+  color: white;
+}
 .home .top-section {
   background-color: #6D7C88;
-  padding: 10px 0;
+  padding: 40px;
   height: 200px;
   color: white;
   display: flex;
@@ -229,19 +238,29 @@ footer a img {
 .home .gallery {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin: 10px 0;
+  justify-content: space-between;
+  margin: 10px auto;
+  width: 80%;
 }
-.home .gallery div,
-.home .gallery p {
+.home .gallery div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 100px;
+  height: 50vh;
 }
-.home .gallery div {
-  background-color: #d9d9d9;
+.home .gallery div p {
+  text-align: center;
+}
+.home .gallery .middle {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.home .gallery img {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
 }
 .home .bottom-section {
   display: flex;
@@ -262,4 +281,10 @@ footer a img {
   background-color: #6558F5;
   color: white;
   border-radius: 12px;
+}
+.home footer #about {
+  animation-name: blink;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
