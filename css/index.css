@@ -161,16 +161,15 @@ p {
   padding-bottom: 10px;
 }
 img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
 }
 body {
-  background-image: url('https://wallpapercave.com/wp/wp3841145.jpg');
-  background: cover;
-  font-family: roboto;
-  margin-top: 10px;
-  padding: 20 20px;
-  font-size: 1.6rem;
+  background-image: url('https://wallpapercave.com/wp/wp2038321.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #cccccc;
 }
 header {
   flex-direction: row;
@@ -207,7 +206,9 @@ header nav a {
    max-width: 100%;  
  }*/
 footer {
-  margin: 20px 30px 90px 30px;
+  margin: 20px;
+  color: #212529;
+  background: #C0C0C0;
 }
 .copyright {
   text-align: center;
@@ -228,8 +229,9 @@ footer {
   src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I94.ttf) format('truetype');
 }
 .container {
-  background-color: #FFEBCD;
+  background-color: opaque;
   max-width: 900px;
+  margin-top: -105px;
   margin: auto;
   box-shadow: 10px 10px 5px 20px  black;
 }
@@ -272,8 +274,6 @@ footer {
   justify-content: space-between;
   border-top: 1px solid black;
   border-bottom: 5px #800080;
-  background-image: url('https://wallpapercave.com/wp/wp3841150.jpg');
-  background: cover;
   font-family: roboto;
   margin: 30px;
   padding-bottom: 40px;
