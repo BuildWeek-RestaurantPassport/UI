@@ -171,40 +171,37 @@ body {
   background-size: cover;
   background-color: #cccccc;
 }
-header {
-  flex-direction: row;
-  justify-content: flex-end;
-  border: 1px solid black;
-  margin: 0 auto;
-  padding: 20px 20px;
-  background-color: #627e91;
-}
-@phone {
-  margin: 1.5rem 0 0 5.7rem;
-}
-header nav {
+.top-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  color: purple;
+  background: #DDA0DD;
+  font-size: 16px;
+  padding: 20px;
+  border: 3px solid green;
 }
-@phone {
-  margin-right: 5.8rem;
-}
-header nav a {
-  justify-content: flex-end;
-  background-color: purple;
-  color: white;
-  font-size: 14px;
-  text-align: center;
+.top-content nav a {
   text-decoration: none;
-  border: 2px solid black;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: red;
+  border: 1px solid black;
+  padding: 10px;
   border-radius: 10px;
-  padding: 4px;
 }
-/*img {
-   max-width: 100%;  
- }*/
+.top-content nav a:hover {
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DDA0DD;
+  color: blueviolet;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
 footer {
   margin: 20px;
   color: #212529;
@@ -231,49 +228,45 @@ footer {
 .container {
   background-color: opaque;
   max-width: 900px;
-  margin-top: -105px;
+  margin-top: 20px;
   margin: auto;
-  box-shadow: 10px 10px 5px 20px  black;
 }
-@phone {
-  flex-direction: column;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-left: 10px;
-}
-.container .hero {
+.hero {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   margin: 50px 0 50px 0;
+  border: 1px solid red;
 }
-@phone {
-  width: 100%;
-  padding: 0 2.5rem;
-}
-.container .about-services {
+.about-services h2 {
   font-size: 15px;
   color: #212529;
   background: #C0C0C0;
   padding: 20px;
   margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  color: red;
 }
 @phone {
   width: 100%;
   padding: 0 2.5rem;
+  margin-left: 20px;
 }
-.container .content {
-  border-top: 1px solid black;
+.content {
+  border-top: 1px solid purple;
   border-bottom: 1px solid black;
   margin: 30px;
 }
-.container .about-content {
+.about-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   border-top: 1px solid black;
   border-bottom: 5px #800080;
+  background-image: url('https://wallpapercave.com/wp/wp3841150.jpg');
+  background: cover;
   font-family: roboto;
   margin: 30px;
   padding-bottom: 40px;
@@ -283,7 +276,7 @@ footer {
   width: 90%;
   margin-left: 2.3rem;
 }
-.container .about-item {
+.about-item {
   margin: 40px 0 0 0;
   padding: 20px;
   background: #FFEBCD;
@@ -291,17 +284,17 @@ footer {
   width: 400px;
   border-radius: 30px;
 }
-.container .about-item img {
-  border-radius: 30px;
+.about-item img {
+  border-radius: 50px;
   max-width: 50%;
   margin-left: 20%;
   margin-bottom: 10px;
 }
-.container .about-item p {
+.about-item p {
   line-height: 18px;
   color: #212529;
 }
-.container .about-item button {
+.about-item button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,7 +305,7 @@ footer {
   border: 2px solid #FF00FF;
   border-radius: 10px;
 }
-.container button:hover {
+button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,7 +320,7 @@ footer {
   width: 35rem;
   margin-left: 2.5rem;
 }
-.container .two-col {
+.two-col {
   display: flex;
   justify-content: space-between;
   margin: 40px 0 40px 0;
@@ -335,15 +328,15 @@ footer {
 @phone {
   flex-direction: column;
 }
-.container .upper-items {
+.upper-items {
   width: 400px;
 }
-.container .three-col {
+.three-col {
   display: flex;
   justify-content: space-between;
   margin: 40px 0 40px 0;
 }
-.container .lower-items {
+.lower-items {
   width: 250px;
 }
 @phone {
