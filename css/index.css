@@ -231,23 +231,19 @@ footer {
   margin-top: 20px;
   margin: auto;
 }
-.hero {
+.about-services h2 {
+  border: 1px solid red;
+  padding: 20px;
+  background: #c79cc7;
+}
+.about-team {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   margin: 50px 0 50px 0;
   border: 1px solid red;
-}
-.about-services h2 {
-  font-size: 15px;
-  color: #212529;
-  background: #C0C0C0;
-  padding: 20px;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  color: red;
+  background-color: #c79cc7;
 }
 @phone {
   width: 100%;
@@ -255,8 +251,8 @@ footer {
   margin-left: 20px;
 }
 .content {
-  border-top: 1px solid purple;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #c8f30a;
+  border-bottom: 1px solid #c8f30a;
   margin: 30px;
 }
 .about-content {
@@ -265,8 +261,6 @@ footer {
   justify-content: space-between;
   border-top: 1px solid black;
   border-bottom: 5px #800080;
-  background-image: url('https://wallpapercave.com/wp/wp3841150.jpg');
-  background: cover;
   font-family: roboto;
   margin: 30px;
   padding-bottom: 40px;
@@ -279,7 +273,8 @@ footer {
 .about-item {
   margin: 40px 0 0 0;
   padding: 20px;
-  background: #FFEBCD;
+  background-image: url('https://wallpapercave.com/wp/wp3841150.jpg');
+  background: cover;
   border: 5px solid #800080;
   width: 400px;
   border-radius: 30px;
