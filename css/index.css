@@ -219,8 +219,22 @@ body {
 }
 footer {
   margin: 20px;
-  color: #212529;
-  background: #C0C0C0;
+  font-family: "Exo", sans-serif;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .copyright {
   text-align: center;
@@ -248,7 +262,7 @@ footer {
 }
 .container .our-team img {
   border: 5px solid yellow;
-  height: 305px;
+  height: 318px;
   width: 100%;
 }
 .container .about-team {
@@ -257,8 +271,9 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  margin: 50px;
-  margin-top: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100%;
   color: #212529;
   background-color: #c79cc7;
 }
@@ -267,27 +282,16 @@ footer {
   padding: 0 2.5rem;
   margin-left: 20px;
 }
-.content {
-  border-top: 1px solid #c8f30a;
-  border-bottom: 1px solid #c8f30a;
-  margin: 30px;
-}
 .about-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-top: 1px solid black;
-  border-bottom: 5px #800080;
+  margin-top: 2px;
   font-family: roboto;
   margin: 30px;
   padding-bottom: 40px;
 }
-@phone {
-  height: auto;
-  width: 90%;
-  margin-left: 2.3rem;
-}
-.about-item {
+.about-content .about-item {
   margin: 40px 0 0 0;
   padding: 20px;
   border: 5px solid #800080;
@@ -310,17 +314,17 @@ footer {
     background-position: 0% 50%;
   }
 }
-.about-item img {
+.about-content .about-item img {
   border-radius: 50px;
   max-width: 50%;
   margin-left: 20%;
   margin-bottom: 10px;
 }
-.about-item p {
+.about-content .about-item p {
   line-height: 18px;
   color: #212529;
 }
-.about-item button {
+.about-content .about-item button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,7 +335,7 @@ footer {
   border: 2px solid #FF00FF;
   border-radius: 10px;
 }
-button:hover {
+.about-content button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,24 +350,24 @@ button:hover {
   width: 35rem;
   margin-left: 2.5rem;
 }
-.two-col {
-  display: flex;
-  justify-content: space-between;
-  margin: 40px 0 40px 0;
-}
 @phone {
   flex-direction: column;
-}
-.upper-items {
-  width: 400px;
-}
-.three-col {
-  display: flex;
-  justify-content: space-between;
-  margin: 40px 0 40px 0;
-}
-.lower-items {
-  width: 250px;
+  .two-col {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 40px 0;
+  }
+  .upper-items {
+    width: 400px;
+  }
+  .three-col {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 40px 0;
+  }
+  .lower-items {
+    width: 250px;
+  }
 }
 @phone {
   width: 100%;
