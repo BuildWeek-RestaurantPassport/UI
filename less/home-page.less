@@ -6,29 +6,32 @@
     margin-top: 20px;
     margin: auto;
     //box-shadow:10px 10px 5px 20px  black;
-
-} 
-.about-services  h2  {
-  border: 1px solid red;
-  padding: 20px;
-  background: rgb(199, 156, 199);
-
-}
-.about-team {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  margin: 50px 0 50px 0;
-  border: 1px solid red;
-  background-color: rgb(199, 156, 199);
-}                                                                                                              
-                                                                                                                  
-@phone {
+.our-team img {
+ border: 5px solid yellow;
+  height: 305px;
   width: 100%;
-  padding: 0 2.5rem;
-  margin-left: 20px;
-}                                                                                                             
+}
+    .about-team {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      margin: 50px;
+      margin-top: 50px;
+      color: @shark;
+      background-color: rgb(199, 156, 199);
+    }          
+    @phone {
+      width: 100%;
+      padding: 0 2.5rem;
+      margin-left: 20px;
+    }               
+}
+
+                                                                                                     
+                                                                                                                  
+                                                                                                
                                                                                                                   
                                                                                                                 
 .content {
@@ -58,26 +61,39 @@
 .about-item  {
   margin: 40px 0 0 0;
   padding: 20px;
-  background-image: url( 'https://wallpapercave.com/wp/wp3841150.jpg');
-  background: cover;
-
   border: 5px solid RGB(128, 0, 128);
   width: 400px;
   border-radius: 30px;
+  font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 .about-item img {
   border-radius: 50px;
   max-width: 50%;
   margin-left: 20%;
   margin-bottom: 10px;
-  
+ 
 
   
 }
 
 .about-item p {
   line-height: 18px;
-  color: @shark;
+  color:@shark;
 }
 
 

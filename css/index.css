@@ -180,14 +180,29 @@ body {
   background: #DDA0DD;
   font-size: 16px;
   padding: 20px;
-  border: 3px solid green;
+  border: 3px solid black;
+  font-family: "Exo", sans-serif;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .top-content nav a {
   text-decoration: none;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFFFFF;
-  color: red;
+  color: #FFFFFF;
   border: 1px solid black;
   padding: 10px;
   border-radius: 10px;
@@ -196,7 +211,7 @@ body {
   text-decoration: none;
   justify-content: space-between;
   align-items: center;
-  background-color: #DDA0DD;
+  background-color: #FFFFFF;
   color: blueviolet;
   border: 1px solid black;
   padding: 10px;
@@ -231,18 +246,20 @@ footer {
   margin-top: 20px;
   margin: auto;
 }
-.about-services h2 {
-  border: 1px solid red;
-  padding: 20px;
-  background: #c79cc7;
+.container .our-team img {
+  border: 5px solid yellow;
+  height: 305px;
+  width: 100%;
 }
-.about-team {
+.container .about-team {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  margin: 50px 0 50px 0;
-  border: 1px solid red;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 50px;
+  margin-top: 50px;
+  color: #212529;
   background-color: #c79cc7;
 }
 @phone {
@@ -273,11 +290,25 @@ footer {
 .about-item {
   margin: 40px 0 0 0;
   padding: 20px;
-  background-image: url('https://wallpapercave.com/wp/wp3841150.jpg');
-  background: cover;
   border: 5px solid #800080;
   width: 400px;
   border-radius: 30px;
+  font-family: "Exo", sans-serif;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .about-item img {
   border-radius: 50px;
