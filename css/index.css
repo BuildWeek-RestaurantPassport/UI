@@ -156,6 +156,11 @@ body {
   width: 95%;
   margin: 0 auto;
 }
+@media (min-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+}
 .container h1,
 .container h2,
 .container h3,
