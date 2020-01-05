@@ -2,12 +2,17 @@
     a {
         text-decoration: none;
         color: white;
+
+        @media @tablet {
+            font-size: 1.2rem;
+        }
     }
 
     .top-section {
         background-color: #6D7C88;
         padding: 40px;
-        height: 200px;
+        // height: 200px;
+        height: 30vh;
         color: white;
 
         .flex(column, space-around);
@@ -24,6 +29,18 @@
 
         .btn {
             .button(14rem, 3rem);
+            
+            @media @tablet {
+                .button(21rem, 4.5rem);
+            }
+        }
+
+        @media @tablet {
+            height: 35vh;
+        }
+
+        @media @desktop {
+            height: 45vh;
         }
     }
 
@@ -39,13 +56,29 @@
             height: 50vh;
             // background: grey;
 
+            img {
+                @media @desktop {
+                    width: 50%;
+                }
+            }
+
             p {
                 text-align: center;
             }
         }
 
+        .upper, .lower {
+            @media @desktop {
+                .flex(row, space-between);
+            }
+        }
+
         .middle {
             .flex(column-reverse, space-between);
+
+            @media @desktop {
+                .flex(row, space-evenly);
+            }
         }
 
         img {
@@ -59,20 +92,19 @@
         .flex(column, space-around);
         align-items: center;
         padding: @padding;
-        height: 125px;
+        height: 20vh;
         background-color: #DFE6ED;
 
         .btn {
             .button(10rem, 3rem);
-        }
-    }
 
-    footer {
-        #about {
-            animation-name: blink;
-            animation-duration: 1.2s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
+            @media @tablet {
+                .button(15rem, 4.5rem);
+            }
+        }
+
+        @media @tablet {
+            height: 30vh;
         }
     }
 }
