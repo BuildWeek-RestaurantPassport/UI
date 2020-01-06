@@ -1,132 +1,169 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Nunito+Sans&display=swap');
 
 .container  {
-	 background-color:opaque;
+    background-color:opaque;
+    max-width: 900px;
     max-width: 900px;
-    margin-top: 20px;
-    margin: auto;
-    //box-shadow:10px 10px 5px 20px  black;
-.our-team img {
- border: 5px solid yellow;
-  height: 318px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 5px 20px black;
+ 
+ 
+ .foodie  {
   width: 100%;
-}
-    .about-team {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px;
-      margin: 0 auto;
-      margin-top: 30px;
-      width: 100%;
-      color: @shark;
-      background-color: rgb(199, 156, 199);
-    }          
-    @phone {
-      width: 100%;
-      padding: 0 2.5rem;
-      margin-left: 20px;
-    }               
-}
+  height: 400px;
+  background-image: url('img\wp3847007-good-food-wallpapers.jpg');
+  background-size: 100% 100%;
+ 
+ }
+ .about-team {
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100%;
+  color: @darkmagenta;
+  background-color: rgb(199, 156, 199);
+  
+  
+  
+  @phone {
+    flex-direction: column;
+    width: 35rem;
+    margin-left: 2.5rem; 
+   } 
+  }
 
-                                                                                                     
-                                                                                                                  
-                                                                                                
-                                                                                                                  
-                                                                                                                
-                                                                                           
-.about-content {
+ 
+ 
+ .about-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;  
    margin-top: 2px;
-  
-                                    
   font-family: roboto;
   margin: 30px;
   padding-bottom: 40px;
-  
+
   .about-item  {
-    margin: 40px 0 0 0;
-    padding: 20px;
-    border: 5px solid RGB(128, 0, 128);
-    width: 400px;
-    border-radius: 30px;
-    font-family: "Exo", sans-serif;
-    color: #fff;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-  }
-  @keyframes gradientBG {
-    0% {
-      background-position: 0% 50%;
+      margin: 40px 0 0 0;
+      padding: 20px;
+      border: 5px solid RGB(128, 0, 128);
+      width: 400px;
+      border-radius: 30px;
+      
+      font-family: "Exo", sans-serif;
+      color: @darkmagenta;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
     }
-    50% {
-      background-position: 100% 50%;
+     h3 {
+       display: flex;
+       flex-direction: row;
+       justify-content:space-evenly;
+       align-items: center;
+      margin: 10px;
+      margin-bottom: 10px;
+      margin-top: 3px;
+       color: @darkmagenta;
+       border: 1px solid green;
+       font-size: 26px;
+     }
+     
+     
+    .about-item img {
+      border-radius: 50px;
+      max-width: 50%;
+      margin-left: 20%;
+      margin-bottom: 10px;
+      border: 1px solid @darkmagenta;
+     }
+     .about-item p {
+      line-height: 18px;
+      color:@shark;
+      }
+      .about-item button {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        background:#DDA0DD;
+        margin-top: 20px;
+        font-size: 12px;
+        margin-left: 25%;
+        border: 2px solid #FF00FF;  
+        border-radius: 10px;
+        
+      } 
+      button:hover  {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin-left: 25%;
+      font-size: 12px;
+      margin-top: 20px;
+      background: purple;
+      border: 2px solid pink;
+      border-radius: 10px;  
+      }
+      @phone {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35rem;
+        margin-left: 3.5rem;
+      }   
     }
-    100% {
-      background-position: 0% 50%;
-    }
+   
   }
-  .about-item img {
-    border-radius: 50px;
-    max-width: 50%;
-    margin-left: 20%;
-    margin-bottom: 10px
-  }
-  .about-item p {
-    line-height: 18px;
-    color:@shark;
-  }
-  .about-item button {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    background:#DDA0DD;
-    margin-top: 20px;
-    font-size: 12px;
-    margin-left: 25%;
-    border: 2px solid #FF00FF;  
-    border-radius: 10px;
+ 
+  
     
-  }
-  button:hover  {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin-left: 25%;
-  font-size: 12px;
-  margin-top: 20px;
-  background: purple;
-  border: 2px solid pink;
-  border-radius: 10px;  
-  }
-  @phone {
-    width: 35rem;
-    margin-left: 2.5rem; 
-  }
-}
-@phone {
-  flex-direction: column;
-  .two-col {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0 40px 0;
-  }
-  .upper-items {
-    width: 400px;
-    }
-    .three-col {
-      display: flex;
-      justify-content: space-between;  
-      margin: 40px 0 40px 0;
-    }
-    .lower-items {
-      width: 250px;
-    }
-}
+
+
+
+    
+   
+ 
+
+
+
+
+ 
+ 
+  
+ 
+  
+  
+    
+    
+
+ 
+
+
+                                                                                                     
+                                                                                                                  
+                                                                                 
+                                                                                                                  
+                                                                                                                
+                                                                                           
+
+  
+ 
+  
+  
+  
+ 
+
+
+  
+  
+    
+   
+    
 
 
 
@@ -144,9 +181,6 @@
 
 
 
-@phone {
-  width: 100%;
-  padding: 0 5rem;
-}
+
 
                                                                                                                 

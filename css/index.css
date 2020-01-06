@@ -1,4 +1,3 @@
-@phone (max-width: 500px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -171,50 +170,53 @@ body {
   background-size: cover;
   background-color: #cccccc;
 }
-.top-content {
+.top-content header h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: purple;
-  background: #DDA0DD;
-  font-size: 16px;
-  padding: 20px;
+  font-size: 28px;
+  padding: 10px;
   border: 3px solid black;
   font-family: "Exo", sans-serif;
-  color: #fff;
+  color: yellow;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
 }
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@media (max-width:500px) {
+  flex-direction: column;
+  padding-top: 1.9rem;
+  padding-bottom: 1rem;
 }
-.top-content nav a {
+.top-content nav {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+@phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav a {
   text-decoration: none;
   justify-content: space-between;
   align-items: center;
+  background-color: blueviolet;
   color: #FFFFFF;
   border: 1px solid black;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
 }
-.top-content nav a:hover {
+nav a:hover {
   text-decoration: none;
   justify-content: space-between;
   align-items: center;
   background-color: #FFFFFF;
   color: blueviolet;
   border: 1px solid black;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
 }
 footer {
@@ -256,16 +258,19 @@ footer {
 }
 .container {
   background-color: opaque;
+  max-width:  900px;
   max-width: 900px;
-  margin-top: 20px;
-  margin: auto;
+  margin: 0 auto;
+  box-shadow: 10px 10px 5px 20px black;
 }
-.container .our-team img {
-  border: 5px solid yellow;
-  height: 318px;
+.container .foodie {
   width: 100%;
+  height: 400px;
+  background-image: url('img\wp3847007-good-food-wallpapers.jpg');
+  background-size: 100% 100%;
 }
 .container .about-team {
+  border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -274,15 +279,15 @@ footer {
   margin: 0 auto;
   margin-top: 30px;
   width: 100%;
-  color: #212529;
+  color: #8B008B;
   background-color: #c79cc7;
 }
 @phone {
-  width: 100%;
-  padding: 0 2.5rem;
-  margin-left: 20px;
+  flex-direction: column;
+  width: 35rem;
+  margin-left: 2.5rem;
 }
-.about-content {
+.container .about-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -291,40 +296,42 @@ footer {
   margin: 30px;
   padding-bottom: 40px;
 }
-.about-content .about-item {
+.container .about-content .about-item {
   margin: 40px 0 0 0;
   padding: 20px;
   border: 5px solid #800080;
   width: 400px;
   border-radius: 30px;
   font-family: "Exo", sans-serif;
-  color: #fff;
+  color: #8B008B;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
 }
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.container .about-content h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 10px;
+  margin-top: 3px;
+  color: #8B008B;
+  border: 1px solid green;
+  font-size: 26px;
 }
-.about-content .about-item img {
+.container .about-content .about-item img {
   border-radius: 50px;
   max-width: 50%;
   margin-left: 20%;
   margin-bottom: 10px;
+  border: 1px solid #8B008B;
 }
-.about-content .about-item p {
+.container .about-content .about-item p {
   line-height: 18px;
   color: #212529;
 }
-.about-content .about-item button {
+.container .about-content .about-item button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,7 +342,7 @@ footer {
   border: 2px solid #FF00FF;
   border-radius: 10px;
 }
-.about-content button:hover {
+.container .about-content button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -347,29 +354,9 @@ footer {
   border-radius: 10px;
 }
 @phone {
-  width: 35rem;
-  margin-left: 2.5rem;
-}
-@phone {
   flex-direction: column;
-  .two-col {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0 40px 0;
-  }
-  .upper-items {
-    width: 400px;
-  }
-  .three-col {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0 40px 0;
-  }
-  .lower-items {
-    width: 250px;
-  }
-}
-@phone {
-  width: 100%;
-  padding: 0 5rem;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  margin-left: 3.5rem;
 }
