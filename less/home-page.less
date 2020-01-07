@@ -1,7 +1,6 @@
 .home {
     a {
         text-decoration: none;
-        color: white;
 
         @media @tablet {
             font-size: 1.2rem;
@@ -32,6 +31,10 @@
 
         .btn {
             .button(14rem, 3rem);
+
+            a {
+                color: white;
+            }
             
             @media @tablet {
                 .button(21rem, 4.5rem);
@@ -63,7 +66,7 @@
 
                     &:hover {
                         animation-name: img-enlarge;
-                        animation-duration: 1.2s;
+                        animation-duration: 1s;
                         animation-fill-mode: forwards;
                     }
                 }
@@ -76,7 +79,7 @@
 
                     &:hover {
                         animation-name: p-enlarge;
-                        animation-duration: 1.2s;
+                        animation-duration: 1s;
                         animation-fill-mode: forwards;
                     }
                 }
@@ -114,6 +117,10 @@
         .btn {
             .button(10rem, 3rem);
 
+            a {
+                color: white;
+            }
+
             @media @tablet {
                 .button(15rem, 4.5rem);
             }
@@ -127,7 +134,7 @@
     .btn {
         @media @desktop {
             &:hover {
-                background-color: darken(#6558F5, 10%);
+                background-color: darken(@purple, 10%);
             }
         }
     }
