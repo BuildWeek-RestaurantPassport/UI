@@ -341,7 +341,7 @@ nav p {
 .home .gallery .middle {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 @media (min-width: 1000px) {
   .home .gallery .middle {
