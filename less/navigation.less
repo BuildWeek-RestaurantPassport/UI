@@ -1,7 +1,13 @@
 .home nav {
-    .flex(column, space-between);
+    .flex(column, space-around);
     align-items: center;
-    margin: @margin;
+    padding: 0.5rem 0;
+    // margin: 0.625rem 0;
+    background-color: @lightgrey2;
+
+    @media @tablet {
+        .flex(row, space-around);
+    }
 
     span {
         font-size: 3rem;
@@ -14,16 +20,42 @@
         margin-top: 1rem;
         width: 100%;
 
+        @media @tablet {
+            width: 55%;
+            height: 8rem;
+            margin-top: 0;
+            .flex(row, space-between);
+        }
+
         a {
-            color: black;
+            color: @black;
             font-size: 1.5rem;
+
+            &:nth-child(3) {
+                .flex(row, center);
+                align-items: center;
+                border: 1px solid @purple;
+                height: 2.5rem;
+                width: 8rem;
+                color: @purple;
+            }
         }
 
         .btn {
-            .button(12rem, 3rem);
+            .button(11rem, 3rem);
             
             a {
-                color: white;
+                color: @white;
+            }
+        }
+
+        @media @desktop {
+            &:hover a {
+                opacity: 0.25;
+            }
+    
+            &:hover a:hover {
+                opacity: 1.0;
             }
         }
     }
@@ -31,6 +63,6 @@
     p {
         text-align: center;
         background-color: lighten(purple, 5%);
-        color: white;
+        color: @white;
     }
 }

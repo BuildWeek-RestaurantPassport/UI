@@ -7,20 +7,22 @@
         }
     }
 
+    background-color: @lightgrey;
+
     .top-section {
         background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
-        padding: 40px;
+        padding: 3.5rem;
         height: 40vh;
-        color: white;
+        color: @white;
 
         .flex(column, space-around);
         align-items: center;
 
         h1 {
-            background: black;
+            background: @black;
             &:before {
                 content: "Tired of deciding what to eat?";
                 animation-name: display;
@@ -33,7 +35,7 @@
             .button(14rem, 3rem);
 
             a {
-                color: white;
+                color: @white;
             }
             
             @media @tablet {
@@ -43,6 +45,7 @@
 
         @media @tablet {
             height: 50vh;
+            padding: 6rem;
         }
 
         @media @desktop {
@@ -52,7 +55,7 @@
 
     .gallery {
         .flex(column, space-between);
-        margin: 10px auto;
+        margin: 0 auto;
         width: 80%;
 
         div {
@@ -74,15 +77,6 @@
 
             p {
                 text-align: center;
-
-                @media @desktop {
-
-                    &:hover {
-                        animation-name: p-enlarge;
-                        animation-duration: 1s;
-                        animation-fill-mode: forwards;
-                    }
-                }
             }
         }
 
@@ -110,15 +104,15 @@
     .bottom-section {
         .flex(column, space-around);
         align-items: center;
-        padding: @padding;
+        padding: 0.625rem 0;
         height: 20vh;
-        background-color: #DFE6ED;
+        background-color: @lightgrey2;
 
         .btn {
             .button(10rem, 3rem);
 
             a {
-                color: white;
+                color: @white;
             }
 
             @media @tablet {
