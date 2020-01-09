@@ -1,18 +1,98 @@
-.container  {
-    background-color:opaque;
-    max-width: 900px;
-    max-width: 900px;
-    margin: 0 auto;
-    box-shadow: 10px 10px 5px 20px black;
- 
- 
- .foodie  {
-  width: 100%;
-  height: 400px;
-  background-image: url('img\wp3847007-good-food-wallpapers.jpg');
-  background-size: 100% 100%;
- 
+
+.home {
+  a {
+      text-decoration: none;
+
+      @media @tablet {
+          font-size: 1.2rem;
+      }
+  }
+.top-section {
+      background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      padding: 3.5rem;
+      height: 40vh;
+      color: @white;
+.flex(column, space-around);
+      align-items: center;
+h1 {
+    background: @black;
+     &:before {
+     content: "Tired of deciding what to eat?";
+      animation-name: display;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+    }
+  }
+.btn {
+    .button(14rem, 3rem);
+
+  a {
+    color: @white;
+  }
+      @media @tablet {
+          .button(21rem, 4.5rem);
+    }
+  }
+
+@media @tablet {
+    height: 50vh;
+    padding: 6rem;
+  }
+@media @desktop {
+          height: 60vh;
+   }
+  }
+}.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 0 50px 0;
+  
+}
+.cta {
+  border: 1px solid red;
+  text-align: center; 
+  line-height: 60px;
+}
+
+.cta h1 {
+	font-size: 72px;
+}
+
+     
+.about-team {
+  display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+margin: 0 auto;
+margin-top: 30px;
+width: 70%;
+color: @darkmagenta;
+background-color: lightgrey;
+border-radius: 10px;
+ h2{
+   color: yellowgreen;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   margin-left: 35%;
  }
+p {
+    color: @black;
+  }
+   @phone {
+  flex-direction: column;
+  width: 35rem;
+  margin-left: 2.5rem; 
+  }
+ }
+
  .about-team {
   border-radius: 10px;
   display: flex;
@@ -39,7 +119,7 @@
  
  .about-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: column;
   justify-content: space-between;  
    margin-top: 2px;
   font-family: roboto;
@@ -122,6 +202,6 @@
       }   
     }
    
-  }
+  
 
   
