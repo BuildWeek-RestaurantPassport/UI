@@ -1,0 +1,56 @@
+// Mixins in here//
+
+    .flex(@direction, @justify) {
+        display: flex;
+        flex-direction: @direction;
+        justify-content: @justify;
+        
+        .button(@width, @height) {
+            .flex(row, center);
+            align-items: center;
+            width: @width;
+            height: @height;
+            background-color: @purple;
+            color: white;
+            border-radius: 12px;
+        }
+        .button2(@width, @height) {
+            .flex(row, center);
+            align-items: center;
+            width: @width;
+            height: @height;
+            background-color: white;
+         }
+         .flex(@direction, @justify) {
+            display: flex;
+            flex-direction: @direction;
+            justify-content: @justify;
+        
+        }
+        .button(@width, @height) {
+            .flex(row, center);
+            align-items: center;
+            width: @width;
+            height: @height;
+            background-color: @purple;
+            color: white;
+            border-radius: 12px;
+        }
+        .button2(@width, @height) {
+            .flex(row, center);
+            align-items: center;
+            width: @width;
+            height: @height;
+            background-color: white;
+       }   
+    }
+
+    
+
+
+
+
+
+
+
+
