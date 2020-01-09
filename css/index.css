@@ -357,19 +357,6 @@ footer {
   width: 35rem;
   margin-left: 2.5rem;
 }
-.about-team {
-  border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 100%;
-  color: #8B008B;
-  background-color: #c79cc7;
-}
 @phone {
   flex-direction: column;
   width: 35rem;
