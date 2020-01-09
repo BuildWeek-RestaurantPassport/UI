@@ -1,5 +1,5 @@
 
-.home {
+.home.about{
   a {
       text-decoration: none;
 
@@ -152,7 +152,7 @@ color: @darkmagenta;
 background-color: lightgrey;
 border-radius: 10px;
  h2{
-   color: yellowgreen;
+   color: @purple;
    width: 100%;
    justify-content: center;
    align-items: center;
@@ -161,7 +161,7 @@ border-radius: 10px;
 p {
     color: @black;
   }
-   @phone {
+   @phone @tablet {
   flex-direction: column;
   width: 35rem;
   margin-left: 2.5rem; 
@@ -173,21 +173,19 @@ p {
   justify-content: space-between;  
    margin-top: 2px;
   font-family: roboto;
-  margin: 30px;
+  margin: 10px;
   padding-bottom: 40px;
-
-  .about-item  {
-      margin: 40px 0 0 0;
+.about-item  {
+  justify-content: space-between;
+      margin: 20px ;
       padding: 20px;
-      border: 1px solid RGB(128, 0, 128);
+      border: 1px solid @black;
       width: 400px;
       border-radius: 30px;
       
       font-family: "Exo", sans-serif;
       color: @darkmagenta;
-      
-    }
-     h3 {
+  h3 {
        display: flex;
        flex-direction: row;
        justify-content:space-evenly;
@@ -199,14 +197,14 @@ p {
        
        font-size: 26px;
      }
-     
+    }
      
     .about-item img {
       border-radius: 50px;
       max-width: 50%;
       margin-left: 20%;
       margin-bottom: 10px;
-      border: 1px solid @darkmagenta;
+      border: 1px solid @black;
      }
      .about-item p {
       line-height: 18px;
@@ -216,22 +214,21 @@ p {
         display: flex;
         justify-content:center;
         align-items: center;
-        background:#DDA0DD;
+        background:@MEDIUMPURPLE;
         margin-top: 20px;
         font-size: 12px;
         margin-left: 25%;
-        border: 2px solid #FF00FF;  
+        border: 2px solid @purple;  
         border-radius: 10px;
 
-        @phone {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 35rem;
-            margin-left: 3.5rem;
-          }   
-        
-      } 
+       @phone {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35rem;
+        margin-left: 3.5rem;
+    }   
+  } 
       button:hover  {
         display: flex;
         justify-content:center;
@@ -239,8 +236,8 @@ p {
         margin-left: 25%;
       font-size: 12px;
       margin-top: 20px;
-      background: purple;
-      border: 2px solid pink;
+      background:@purple;
+      border: 2px solid @black;
       border-radius: 10px;  
       }
       @phone {
@@ -251,7 +248,8 @@ p {
         margin-left: 3.5rem;
       }   
     }
- 
+  
+
   
 
   

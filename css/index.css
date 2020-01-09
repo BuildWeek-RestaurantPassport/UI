@@ -206,7 +206,7 @@ body {
   color: yellow;
 }
 .top-content header h1 {
-  color: green;
+  color: black;
 }
 .top-content header .top-content nav {
   border-radius: 10px;
@@ -217,8 +217,8 @@ body {
   text-decoration: none;
   justify-content: space-between;
   align-items: center;
-  background-color: pink;
-  color: blueviolet;
+  background-color: #9370DB;
+  color: #DFE6ED;
   border: 1px solid black;
   padding: 5px;
   border-radius: 10px;
@@ -227,8 +227,8 @@ body {
   text-decoration: none;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  color: blueviolet;
+  background-color: #6558F5;
+  color: #DFE6ED;
   border: 1px solid black;
   padding: 5px;
   border-radius: 10px;
@@ -237,7 +237,7 @@ body {
   display: flex;
   color: yellow;
 }
-.home footer {
+.home.about footer {
   width: 100%;
   height: 10vh;
   display: flex;
@@ -246,28 +246,28 @@ body {
   align-items: center;
   background-color: #F0F4F7;
 }
-.home footer p {
+.home.about footer p {
   text-align: center;
   padding: 0.625rem 0;
 }
-.home footer a {
+.home.about footer a {
   width: 5%;
   color: #6558F5;
 }
-.home footer a img {
+.home.about footer a img {
   width: 75%;
   height: 75%;
   object-fit: contain;
 }
-.home a {
+.home.about a {
   text-decoration: none;
 }
 @media (min-width: 800px) {
-  .home a {
+  .home.about a {
     font-size: 1.2rem;
   }
 }
-.home .top-section {
+.home.about .top-section {
   background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
   background-repeat: no-repeat;
   background-size: cover;
@@ -280,16 +280,16 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.home .top-section h1 {
+.home.about .top-section h1 {
   background: black;
 }
-.home .top-section h1:before {
+.home.about .top-section h1:before {
   content: "Tired of deciding what to eat?";
   animation-name: display;
   animation-duration: 7s;
   animation-iteration-count: infinite;
 }
-.home .top-section .btn {
+.home.about .top-section .btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -300,11 +300,11 @@ body {
   color: white;
   border-radius: 12px;
 }
-.home .top-section .btn a {
+.home.about .top-section .btn a {
   color: white;
 }
 @media (min-width: 800px) {
-  .home .top-section .btn {
+  .home.about .top-section .btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -317,24 +317,24 @@ body {
   }
 }
 @media (min-width: 800px) {
-  .home .top-section {
+  .home.about .top-section {
     height: 50vh;
     padding: 6rem;
   }
 }
 @media (min-width: 1000px) {
-  .home .top-section {
+  .home.about .top-section {
     height: 60vh;
   }
 }
-.home .gallery {
+.home.about .gallery {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
   width: 80%;
 }
-.home .gallery div {
+.home.about .gallery div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -342,44 +342,44 @@ body {
   height: 50vh;
 }
 @media (min-width: 1000px) {
-  .home .gallery div img {
+  .home.about .gallery div img {
     width: 50%;
   }
-  .home .gallery div img:hover {
+  .home.about .gallery div img:hover {
     animation-name: img-enlarge;
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
 }
-.home .gallery div p {
+.home.about .gallery div p {
   text-align: center;
 }
 @media (min-width: 1000px) {
-  .home .gallery .upper,
-  .home .gallery .lower {
+  .home.about .gallery .upper,
+  .home.about .gallery .lower {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 }
-.home .gallery .middle {
+.home.about .gallery .middle {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-evenly;
 }
 @media (min-width: 1000px) {
-  .home .gallery .middle {
+  .home.about .gallery .middle {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 }
-.home .gallery img {
+.home.about .gallery img {
   width: 100%;
   height: 80%;
   object-fit: contain;
 }
-.home .bottom-section {
+.home.about .bottom-section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -388,7 +388,7 @@ body {
   height: 20vh;
   background-color: #DFE6ED;
 }
-.home .bottom-section .btn {
+.home.about .bottom-section .btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -399,11 +399,11 @@ body {
   color: white;
   border-radius: 12px;
 }
-.home .bottom-section .btn a {
+.home.about .bottom-section .btn a {
   color: white;
 }
 @media (min-width: 800px) {
-  .home .bottom-section .btn {
+  .home.about .bottom-section .btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -416,12 +416,12 @@ body {
   }
 }
 @media (min-width: 800px) {
-  .home .bottom-section {
+  .home.about .bottom-section {
     height: 30vh;
   }
 }
 @media (min-width: 1000px) {
-  .home .btn:hover {
+  .home.about .btn:hover {
     background-color: #3928f2;
   }
 }
@@ -454,7 +454,7 @@ body {
   border-radius: 10px;
 }
 .about-team h2 {
-  color: yellowgreen;
+  color: #6558F5;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -463,7 +463,7 @@ body {
 .about-team p {
   color: black;
 }
-@phone {
+@phone (min-width: 800px) {
   flex-direction: column;
   width: 35rem;
   margin-left: 2.5rem;
@@ -474,19 +474,20 @@ body {
   justify-content: space-between;
   margin-top: 2px;
   font-family: roboto;
-  margin: 30px;
+  margin: 10px;
   padding-bottom: 40px;
 }
 .about-content .about-item {
-  margin: 40px 0 0 0;
+  justify-content: space-between;
+  margin: 20px ;
   padding: 20px;
-  border: 1px solid #800080;
+  border: 1px solid black;
   width: 400px;
   border-radius: 30px;
   font-family: "Exo", sans-serif;
   color: #8B008B;
 }
-.about-content h3 {
+.about-content .about-item h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -502,7 +503,7 @@ body {
   max-width: 50%;
   margin-left: 20%;
   margin-bottom: 10px;
-  border: 1px solid #8B008B;
+  border: 1px solid black;
 }
 .about-content .about-item p {
   line-height: 18px;
@@ -512,11 +513,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #DDA0DD;
+  background: #9370DB;
   margin-top: 20px;
   font-size: 12px;
   margin-left: 25%;
-  border: 2px solid #FF00FF;
+  border: 2px solid #6558F5;
   border-radius: 10px;
 }
 @phone {
@@ -533,8 +534,8 @@ body {
   margin-left: 25%;
   font-size: 12px;
   margin-top: 20px;
-  background: purple;
-  border: 2px solid pink;
+  background: #6558F5;
+  border: 2px solid black;
   border-radius: 10px;
 }
 @phone {
