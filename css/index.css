@@ -189,7 +189,7 @@ body {
     font-size: 1.5rem;
   }
 }
-.home nav {
+.home.index nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -198,17 +198,17 @@ body {
   background-color: #DFE6ED;
 }
 @media (min-width: 800px) {
-  .home nav {
+  .home.index nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
   }
 }
-.home nav span {
+.home.index nav span {
   font-size: 3rem;
 }
-.home nav .links {
+.home.index nav .links {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -218,7 +218,7 @@ body {
   width: 100%;
 }
 @media (min-width: 800px) {
-  .home nav .links {
+  .home.index nav .links {
     width: 55%;
     height: 8rem;
     margin-top: 0;
@@ -227,11 +227,11 @@ body {
     justify-content: space-between;
   }
 }
-.home nav .links a {
+.home.index nav .links a {
   color: black;
   font-size: 1.5rem;
 }
-.home nav .links a:nth-child(3) {
+.home.index nav .links a:nth-child(3) {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -241,7 +241,7 @@ body {
   width: 8rem;
   color: #6558F5;
 }
-.home nav .links .btn {
+.home.index nav .links .btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -252,23 +252,23 @@ body {
   color: white;
   border-radius: 12px;
 }
-.home nav .links .btn a {
+.home.index nav .links .btn a {
   color: white;
 }
 @media (min-width: 1000px) {
-  .home nav .links:hover a {
+  .home.index nav .links:hover a {
     opacity: 0.25;
   }
-  .home nav .links:hover a:hover {
+  .home.index nav .links:hover a:hover {
     opacity: 1;
   }
 }
-.home nav p {
+.home.index nav p {
   text-align: center;
   background-color: #9a0099;
   color: white;
 }
-.home footer {
+.home.index footer {
   width: 100%;
   height: 10vh;
   display: flex;
@@ -277,34 +277,34 @@ body {
   align-items: center;
   background-color: #F0F4F7;
 }
-.home footer p {
+.home.index footer p {
   text-align: center;
   padding: 0.625rem 0;
 }
-.home footer a {
+.home.index footer a {
   width: 5%;
   color: #6558F5;
 }
-.home footer a img {
+.home.index footer a img {
   width: 75%;
   height: 75%;
   object-fit: contain;
 }
-.home footer #about {
+.home.index footer #about {
   width: 12vw;
 }
-.home {
+.home.index {
   background-color: #F0F4F7;
 }
-.home a {
+.home.index a {
   text-decoration: none;
 }
 @media (min-width: 800px) {
-  .home a {
+  .home.index a {
     font-size: 1.2rem;
   }
 }
-.home .top-section {
+.home.index .top-section {
   background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
   background-repeat: no-repeat;
   background-size: cover;
@@ -317,16 +317,16 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.home .top-section h1 {
+.home.index .top-section h1 {
   background: black;
 }
-.home .top-section h1:before {
+.home.index .top-section h1:before {
   content: "Tired of deciding what to eat?";
   animation-name: display;
   animation-duration: 7s;
   animation-iteration-count: infinite;
 }
-.home .top-section .btn {
+.home.index .top-section .btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -337,11 +337,11 @@ body {
   color: white;
   border-radius: 12px;
 }
-.home .top-section .btn a {
+.home.index .top-section .btn a {
   color: white;
 }
 @media (min-width: 800px) {
-  .home .top-section .btn {
+  .home.index .top-section .btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -354,24 +354,24 @@ body {
   }
 }
 @media (min-width: 800px) {
-  .home .top-section {
+  .home.index .top-section {
     height: 50vh;
     padding: 6rem;
   }
 }
 @media (min-width: 1000px) {
-  .home .top-section {
+  .home.index .top-section {
     height: 60vh;
   }
 }
-.home .gallery {
+.home.index .gallery {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
   width: 80%;
 }
-.home .gallery div {
+.home.index .gallery div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -379,44 +379,44 @@ body {
   height: 50vh;
 }
 @media (min-width: 1000px) {
-  .home .gallery div img {
+  .home.index .gallery div img {
     width: 50%;
   }
-  .home .gallery div img:hover {
+  .home.index .gallery div img:hover {
     animation-name: img-enlarge;
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
 }
-.home .gallery div p {
+.home.index .gallery div p {
   text-align: center;
 }
 @media (min-width: 1000px) {
-  .home .gallery .upper,
-  .home .gallery .lower {
+  .home.index .gallery .upper,
+  .home.index .gallery .lower {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 }
-.home .gallery .middle {
+.home.index .gallery .middle {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-evenly;
 }
 @media (min-width: 1000px) {
-  .home .gallery .middle {
+  .home.index .gallery .middle {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 }
-.home .gallery img {
+.home.index .gallery img {
   width: 100%;
   height: 80%;
   object-fit: contain;
 }
-.home .bottom-section {
+.home.index .bottom-section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -425,7 +425,7 @@ body {
   height: 20vh;
   background-color: #DFE6ED;
 }
-.home .bottom-section .btn {
+.home.index .bottom-section .btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -436,11 +436,11 @@ body {
   color: white;
   border-radius: 12px;
 }
-.home .bottom-section .btn a {
+.home.index .bottom-section .btn a {
   color: white;
 }
 @media (min-width: 800px) {
-  .home .bottom-section .btn {
+  .home.index .bottom-section .btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -453,12 +453,12 @@ body {
   }
 }
 @media (min-width: 800px) {
-  .home .bottom-section {
+  .home.index .bottom-section {
     height: 30vh;
   }
 }
 @media (min-width: 1000px) {
-  .home .btn:hover {
+  .home.index .btn:hover {
     background-color: #3928f2;
   }
 }
