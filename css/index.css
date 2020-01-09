@@ -174,53 +174,84 @@ p {
   line-height: 1.5;
   font-size: 1.2rem;
 }
-.home.about .top-content header {
+.home.about nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0;
+  background-color: #DFE6ED;
+}
+@media (min-width: 800px) {
+  .home.about nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+}
+.home.about nav span {
+  font-size: 3rem;
+}
+.home.about nav .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 18rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .home.about nav .links {
+    width: 55%;
+    height: 8rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.home.about nav .links a {
+  color: black;
+  font-size: 1.5rem;
+}
+.home.about nav .links a:nth-child(3) {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  font-size: 16px;
-  padding: 10px;
-  border: 3px solid black;
-  font-family: "Exo", sans-serif;
-  color: black;
-  background-color: silver;
+  border: 1px solid #6558F5;
+  height: 2.5rem;
+  width: 8rem;
+  color: #6558F5;
 }
-@phone {
+.home.about nav .links .btn {
   display: flex;
-  color: yellow;
-}
-.home.about .top-content header h1 {
-  color: black;
-}
-.home.about .top-content header .top-content nav {
-  border-radius: 10px;
-  padding: 5px;
-  margin: 5px;
-}
-.home.about .top-content header nav a {
-  text-decoration: none;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  background-color: MEDIUMPURPLE;
-  color: lightgrey2;
-  border: 1px solid black;
-  padding: 5px;
-  border-radius: 10px;
+  width: 11rem;
+  height: 3rem;
+  background-color: #6558F5;
+  color: white;
+  border-radius: 12px;
 }
-.home.about .top-content header nav a:hover {
-  text-decoration: none;
-  justify-content: space-between;
-  align-items: center;
-  background-color: purple;
-  color: lightgrey2;
-  border: 1px solid black;
-  padding: 5px;
-  border-radius: 10px;
+.home.about nav .links .btn a {
+  color: #FFFFFF;
 }
-@phone {
-  display: flex;
-  color: yellow;
+@media (min-width: 1000px) {
+  .home.about nav .links:hover a {
+    opacity: 0.25;
+  }
+  .home.about nav .links:hover a:hover {
+    opacity: 1;
+  }
+}
+.home.about nav p {
+  text-align: center;
+  background-color: #9a0099;
+  color: #FFFFFF;
 }
 .home.about footer {
   width: 100%;
@@ -235,14 +266,20 @@ p {
   text-align: center;
   padding: 0.625rem 0;
 }
-.home.about footer p a {
+.home.about footer a {
   width: 5%;
   color: #6558F5;
 }
-.home.about footer p a img {
+.home.about footer a img {
   width: 75%;
   height: 75%;
   object-fit: contain;
+}
+.home.about footer #about {
+  width: 12vw;
+}
+.home.about {
+  background-color: #F0F4F7;
 }
 .home.about a {
   text-decoration: none;
@@ -410,22 +447,7 @@ p {
     background-color: #3928f2;
   }
 }
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  margin: 50px 0 50px 0;
-}
-.cta {
-  border: 1px solid red;
-  text-align: center;
-  line-height: 60px;
-}
-.cta h1 {
-  font-size: 72px;
-}
-.about-team {
+.home.about .about-team {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -438,22 +460,28 @@ p {
   background-color: lightgrey;
   border-radius: 10px;
 }
-.about-team h2 {
+@phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.home.about h2 {
   color: #6558F5;
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-left: 35%;
-}
-.about-team p {
-  color: black;
+  margin-left: 78%;
 }
 @phone (min-width: 800px) {
   flex-direction: column;
-  width: 35rem;
+  width: 100%;
   margin-left: 2.5rem;
+  p {
+    color: black;
+  }
 }
-.about-content {
+.home.about .about-content {
   display: flex;
   flex-wrap: column;
   justify-content: space-between;
@@ -462,7 +490,11 @@ p {
   margin: 10px;
   padding-bottom: 40px;
 }
-.about-content .about-item {
+@phone (min-width: 800px) {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home.about .about-content .about-item {
   justify-content: space-between;
   margin: 20px ;
   padding: 20px;
@@ -472,7 +504,11 @@ p {
   font-family: "Exo", sans-serif;
   color: #8B008B;
 }
-.about-content .about-item h3 {
+@phone (min-width: 800px) {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home.about .about-content h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -483,18 +519,25 @@ p {
   color: dodgerblue;
   font-size: 26px;
 }
-.about-content .about-item img {
+@phone {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  margin-left: 3.5rem;
+}
+.home.about .about-content .about-item img {
   border-radius: 50px;
   max-width: 50%;
   margin-left: 20%;
   margin-bottom: 10px;
   border: 1px solid black;
 }
-.about-content .about-item p {
+.home.about .about-content .about-item p {
   line-height: 18px;
   color: #212529;
 }
-.about-content .about-item button {
+.home.about .about-item button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -511,22 +554,15 @@ p {
   align-items: center;
   width: 35rem;
   margin-left: 3.5rem;
-}
-.about-content button:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 25%;
-  font-size: 12px;
-  margin-top: 20px;
-  background: #6558F5;
-  border: 2px solid black;
-  border-radius: 10px;
-}
-@phone {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 35rem;
-  margin-left: 3.5rem;
+  button:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    font-size: 12px;
+    margin-top: 20px;
+    background: #6558F5;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
 }
