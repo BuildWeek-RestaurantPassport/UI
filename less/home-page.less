@@ -45,25 +45,100 @@ h1 {
           height: 60vh;
    }
   }
-}.hero {
+  .gallery {
+    .flex(column, space-between);
+    margin: 0 auto;
+    width: 80%;
+
+    div {
+        .flex(column, space-evenly);
+        align-items: center;
+        height: 50vh;
+
+        img {
+            @media @desktop {
+                width: 50%;
+
+                &:hover {
+                    animation-name: img-enlarge;
+                    animation-duration: 1s;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .upper, .lower {
+        @media @desktop {
+            .flex(row, space-between);
+        }
+    }
+
+    .middle {
+        .flex(column-reverse, space-evenly);
+
+        @media @desktop {
+            .flex(row, space-evenly);
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 80%;
+        object-fit: contain;
+    }
+}
+.bottom-section {
+        .flex(column, space-around);
+        align-items: center;
+        padding: 0.625rem 0;
+        height: 20vh;
+        background-color: @lightgrey2;
+
+        .btn {
+            .button(10rem, 3rem);
+
+            a {
+                color: @white;
+            }
+
+            @media @tablet {
+                .button(15rem, 4.5rem);
+            }
+        }
+
+        @media @tablet {
+            height: 30vh;
+        }
+    }
+
+    .btn {
+        @media @desktop {
+            &:hover {
+                background-color: darken(@purple, 10%);
+            }
+        }
+    }
+}
+.hero {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   margin: 50px 0 50px 0;
-  
 }
 .cta {
   border: 1px solid red;
   text-align: center; 
   line-height: 60px;
 }
-
 .cta h1 {
 	font-size: 72px;
 }
-
-     
 .about-team {
   display: flex;
 flex-wrap: wrap;
@@ -92,21 +167,7 @@ p {
   margin-left: 2.5rem; 
   }
  }
-
- 
-  
-  
-  
-  @phone {
-    flex-direction: column;
-    width: 35rem;
-    margin-left: 2.5rem; 
-   } 
-  
-
- 
- 
- .about-content {
+.about-content {
   display: flex;
   flex-wrap: column;
   justify-content: space-between;  
@@ -190,7 +251,7 @@ p {
         margin-left: 3.5rem;
       }   
     }
-   
+ 
   
 
   

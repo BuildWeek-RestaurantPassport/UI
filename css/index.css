@@ -237,14 +237,27 @@ body {
   display: flex;
   color: yellow;
 }
-footer {
-  margin: 20px;
-  font-family: "Exo", sans-serif;
-  color: black;
+.home footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F0F4F7;
 }
-.copyright {
+.home footer p {
   text-align: center;
-  font-size: 14px;
+  padding: 0.625rem 0;
+}
+.home footer a {
+  width: 5%;
+  color: #6558F5;
+}
+.home footer a img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
 }
 .home a {
   text-decoration: none;
@@ -314,6 +327,104 @@ footer {
     height: 60vh;
   }
 }
+.home .gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+.home .gallery div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+}
+@media (min-width: 1000px) {
+  .home .gallery div img {
+    width: 50%;
+  }
+  .home .gallery div img:hover {
+    animation-name: img-enlarge;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}
+.home .gallery div p {
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .home .gallery .upper,
+  .home .gallery .lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.home .gallery .middle {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+}
+@media (min-width: 1000px) {
+  .home .gallery .middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.home .gallery img {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+}
+.home .bottom-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.625rem 0;
+  height: 20vh;
+  background-color: #DFE6ED;
+}
+.home .bottom-section .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+  background-color: #6558F5;
+  color: white;
+  border-radius: 12px;
+}
+.home .bottom-section .btn a {
+  color: white;
+}
+@media (min-width: 800px) {
+  .home .bottom-section .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 4.5rem;
+    background-color: #6558F5;
+    color: white;
+    border-radius: 12px;
+  }
+}
+@media (min-width: 800px) {
+  .home .bottom-section {
+    height: 30vh;
+  }
+}
+@media (min-width: 1000px) {
+  .home .btn:hover {
+    background-color: #3928f2;
+  }
+}
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -351,11 +462,6 @@ footer {
 }
 .about-team p {
   color: black;
-}
-@phone {
-  flex-direction: column;
-  width: 35rem;
-  margin-left: 2.5rem;
 }
 @phone {
   flex-direction: column;
