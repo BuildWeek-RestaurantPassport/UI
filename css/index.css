@@ -289,6 +289,9 @@ body {
   height: 75%;
   object-fit: contain;
 }
+.home footer #about {
+  width: 12vw;
+}
 .home {
   background-color: #F0F4F7;
 }
