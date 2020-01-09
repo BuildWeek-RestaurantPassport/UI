@@ -135,14 +135,15 @@ background-color: @lightgrey;
 }
 
 .about-team {
-  display: flex;
-flex-wrap: wrap;
+  
+flex-direction: row;
 align-items: center;
 justify-content: space-between;
-padding: 20px;
+align-items:center;
+padding: 10px;
 margin: 0 auto;
 margin-top: 30px;
-width: 70%;
+width: 50%;
 color: @darkmagenta;
 background-color: lightgrey;
 border-radius: 10px;
@@ -155,14 +156,15 @@ border-radius: 10px;
   }
  }
   
- h2{
-   color: @purple;
-   width: 100%;
+ h2 {
+   flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin-left: 78%;
-  
-   @phone @tablet {
+   color: @purple;
+   width: 35%;
+   margin:0 auto;
+   
+    @phone @tablet {
     flex-direction: column;
     width: 100%;
     margin-left: 2.5rem; 
@@ -187,7 +189,7 @@ border-radius: 10px;
     flex-wrap: wrap;
 
   }
-
+ 
   .about-item  {
     justify-content: space-between;
     margin: 20px ;

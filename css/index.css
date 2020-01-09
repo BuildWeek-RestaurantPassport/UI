@@ -448,14 +448,13 @@ p {
   }
 }
 .home.about .about-team {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 10px;
   margin: 0 auto;
   margin-top: 30px;
-  width: 70%;
+  width: 50%;
   color: #8B008B;
   background-color: lightgrey;
   border-radius: 10px;
@@ -467,11 +466,12 @@ p {
   align-items: center;
 }
 .home.about h2 {
-  color: #6558F5;
-  width: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 78%;
+  color: #6558F5;
+  width: 35%;
+  margin: 0 auto;
 }
 @phone (min-width: 800px) {
   flex-direction: column;
