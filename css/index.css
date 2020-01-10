@@ -1,7 +1,3 @@
-
-
-
-
 @keyframes display {
   33% {
     content: "Want to discover new eateries?";
@@ -18,13 +14,9 @@
     height: 120%;
     z-index: 1;
   }
-
 }
-
-}
-
-
 /*.flex(@direction, @justify) {
+
     display: flex;
     flex-direction: @direction;
     justify-content: @justify;
@@ -35,12 +27,25 @@
     align-items: center;
     width: @width;
     height: @height;
+
+    background-color: @purple;
+    color: white;
+    border-radius: 12px;
+}
+
+.button2(@width, @height) {
+    .flex(row, center);
+    align-items: center;
+    width: @width;
+    height: @height;
+    background-color: white;
+    color: @purple;
+}
+
     background-color: #6558F5;
     color: white;
     border-radius: 12px;
 }*/
-
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,57 +174,131 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-
 * {
-  box-sizing: border-box;
+  /** {
+
+    box-sizing: border-box;
 }
+
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
-html,
-body {
-  font-family: 'Roboto', sans-serif;
+
+html, body {
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
+
+    width: 100%;
+    margin: 0 auto;
+
+
+    width: 95%;
+    margin: 0 auto;
+
+    @media @desktop {
+        width: 90%;
+    }
+
+
+    h1, h2, h3, h4, h5 {
+        font-family: 'Indie Flower', cursive;
+    }
+    
+
+    h1 {
+        font-size: 2.2rem;
+
+        @media @tablet {
+            font-size: 3rem;
+        }
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+
+        @media @tablet {
+            font-size: 2.2rem;
+        }
+    }
+    
+    p {
+        line-height: 1.5;
+        font-size: 1.2rem;
+
+        @media @tablet {
+            font-size: 1.5rem;
+        }
+    }
+}  */
+}
+* * {
+  box-sizing: border-box;
+}
+* html {
+  font-size: 62.5%;
+}
+* html,
+* body {
+  font-family: 'Roboto', sans-serif;
+}
+* .container {
   width: 100%;
   margin: 0 auto;
 }
-
-.container h1,
-.container h2,
-.container h3,
-.container h4,
-.container h5 {
+* h1,
+* h2,
+* h3,
+* h4,
+* h5 {
   font-family: 'Indie Flower', cursive;
 }
-.container h1 {
+* h1 {
+  font-size: 2.2rem;
+}
+* h2 {
+  font-size: 1.5rem;
+}
+* p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  background-color: #cccccc;
+}
+* body h1 {
   font-size: 2.2rem;
 }
 @media (min-width: 800px) {
-  .container h1 {
+  * body h1 {
     font-size: 3rem;
   }
 }
-.container h2 {
+* body h2 {
   font-size: 1.5rem;
 }
 @media (min-width: 800px) {
-  .container h2 {
+  * body h2 {
     font-size: 2.2rem;
   }
 }
-.container p {
+* body p {
   line-height: 1.5;
   font-size: 1.2rem;
 }
 @media (min-width: 800px) {
-  .container p {
+  * body p {
     font-size: 1.5rem;
   }
 }
-.home nav {
+.home.about nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0;
+  background-color: #DFE6ED;
+}
+.home.about nav .home nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -228,17 +307,17 @@ body {
   background-color: #DFE6ED;
 }
 @media (min-width: 800px) {
-  .home nav {
+  .home.about nav .home nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
   }
 }
-.home nav span {
+.home.about nav .home nav span {
   font-size: 3rem;
 }
-.home nav .links {
+.home.about nav .home nav .links {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -248,7 +327,7 @@ body {
   width: 100%;
 }
 @media (min-width: 800px) {
-  .home nav .links {
+  .home.about nav .home nav .links {
     width: 55%;
     height: 8rem;
     margin-top: 0;
@@ -257,11 +336,11 @@ body {
     justify-content: space-between;
   }
 }
-.home nav .links a {
+.home.about nav .home nav .links a {
   color: black;
   font-size: 1.5rem;
 }
-.home nav .links a:nth-child(3) {
+.home.about nav .home nav .links a:nth-child(3) {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -271,7 +350,7 @@ body {
   width: 8rem;
   color: #6558F5;
 }
-.home nav .links .btn {
+.home.about nav .home nav .links .btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -282,240 +361,72 @@ body {
   color: white;
   border-radius: 12px;
 }
-.home nav .links .btn a {
-  color: white;
+.home.about nav .home nav .links .btn a {
+  color: #FFFFFF;
 }
 @media (min-width: 1000px) {
-  .home nav .links:hover a {
+  .home.about nav .home nav .links:hover a {
     opacity: 0.25;
   }
-  .home nav .links:hover a:hover {
+  .home.about nav .home nav .links:hover a:hover {
     opacity: 1;
   }
 }
-.home nav p {
+.home.about nav .home nav p {
   text-align: center;
   background-color: #9a0099;
-  color: white;
+  color: #FFFFFF;
 }
-.home footer {
-  width: 100%;
-  height: 10vh;
+.home.about nav .top-content header h1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #F0F4F7;
-}
-.home footer p {
-  text-align: center;
-  padding: 0.625rem 0;
-}
-.home footer a {
-  width: 5%;
-  color: #6558F5;
-}
-.home footer a img {
-  width: 75%;
-  height: 75%;
-  object-fit: contain;
-}
-.home footer #about {
-  width: 12vw;
-}
-.home {
-  background-color: #F0F4F7;
-}
-.home a {
-  text-decoration: none;
-}
-@media (min-width: 800px) {
-  .home a {
-    font-size: 1.2rem;
-  }
-}
-.home .top-section {
-  background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  padding: 3.5rem;
-  height: 40vh;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.home .top-section h1 {
-  background: black;
-}
-.home .top-section h1:before {
-  content: "Tired of deciding what to eat?";
-  animation-name: display;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-}
-.home .top-section .btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 14rem;
-  height: 3rem;
-  background-color: #6558F5;
-  color: white;
-  border-radius: 12px;
-}
-.home .top-section .btn a {
-  color: white;
-}
-@media (min-width: 800px) {
-  .home .top-section .btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 21rem;
-    height: 4.5rem;
-    background-color: #6558F5;
-    color: white;
-    border-radius: 12px;
-  }
-}
-@media (min-width: 800px) {
-  .home .top-section {
-    height: 50vh;
-    padding: 6rem;
-  }
-}
-@media (min-width: 1000px) {
-  .home .top-section {
-    height: 60vh;
-  }
-}
-.home .gallery {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 80%;
-}
-.home .gallery div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  height: 50vh;
+  font-size: 28px;
+  padding: 10px;
+  border: 3px solid black;
+  font-family: "Exo", sans-serif;
+  color: #212529;
+  background-color: silver;
 }
-@media (min-width: 1000px) {
-  .home .gallery div img {
-    width: 50%;
-  }
-  .home .gallery div img:hover {
-    animation-name: img-enlarge;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-}
-.home .gallery div p {
-  text-align: center;
-}
-@media (min-width: 1000px) {
-  .home .gallery .upper,
-  .home .gallery .lower {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-.home .gallery .middle {
+@phone {
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-evenly;
+  color: yellow;
 }
-@media (min-width: 1000px) {
-  .home .gallery .middle {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
+.home.about nav .top-content header h1 .top-content nav {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
 }
-.home .gallery img {
-  width: 100%;
-  height: 80%;
-  object-fit: contain;
+.home.about nav .top-content header h1 .top-content nav {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
 }
-.home .bottom-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.home.about nav .top-content header h1 .top-content nav {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+.home.about nav .top-content header h1 nav a {
+  text-decoration: none;
+  justify-content: space-between;
   align-items: center;
-  padding: 0.625rem 0;
-  height: 20vh;
-  background-color: #DFE6ED;
+  background-color: blueviolet;
+  color: #FFFFFF;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
 }
-.home .bottom-section .btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.home.about nav .top-content header h1 nav a:hover {
+  text-decoration: none;
+  justify-content: space-between;
   align-items: center;
-  width: 10rem;
-  height: 3rem;
-  background-color: #6558F5;
-  color: white;
-  border-radius: 12px;
-}
-.home .bottom-section .btn a {
-  color: white;
-}
-@media (min-width: 800px) {
-  .home .bottom-section .btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 15rem;
-    height: 4.5rem;
-    background-color: #6558F5;
-    color: white;
-    border-radius: 12px;
-  }
-}
-@media (min-width: 800px) {
-  .home .bottom-section {
-    height: 30vh;
-  }
-}
-@media (min-width: 1000px) {
-  .home .btn:hover {
-    background-color: #3928f2;
-  }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Indie Flower', cursive;
-}
-h1 {
-  font-size: 2.2rem;
-}
-h2 {
-  font-size: 1.5rem;
-}
-p {
-  line-height: 1.5;
-  font-size: 1.2rem;
-}
-.home.about nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0.5rem 0;
-  background-color: #DFE6ED;
+  background-color: #FFFFFF;
+  color: blueviolet;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
 }
 @media (min-width: 800px) {
   .home.about nav {
@@ -613,6 +524,40 @@ p {
 .home.about footer #about {
   width: 12vw;
 }
+.home footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F0F4F7;
+}
+.home footer p {
+  text-align: center;
+  padding: 0.625rem 0;
+}
+.home footer a {
+  width: 5%;
+  color: #6558F5;
+}
+.home footer a img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+}
+.home footer #about {
+  width: 12vw;
+}
+footer {
+  margin: 20px;
+  font-family: "Exo", sans-serif;
+  color: #fff;
+}
+.copyright {
+  text-align: center;
+  font-size: 14px;
+}
 .home.about {
   background-color: #F0F4F7;
 }
@@ -624,7 +569,7 @@ p {
     font-size: 1.2rem;
   }
 }
-.home.about .top-section {
+.home.about .top-section.about {
   background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
   background-repeat: no-repeat;
   background-size: cover;
@@ -637,16 +582,16 @@ p {
   justify-content: space-around;
   align-items: center;
 }
-.home.about .top-section h1 {
+.home.about .top-section.about h1 {
   background: black;
 }
-.home.about .top-section h1:before {
+.home.about .top-section.about h1:before {
   content: "Tired of deciding what to eat?";
   animation-name: display;
   animation-duration: 7s;
   animation-iteration-count: infinite;
 }
-.home.about .top-section .btn {
+.home.about .top-section.about .btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -657,11 +602,11 @@ p {
   color: white;
   border-radius: 12px;
 }
-.home.about .top-section .btn a {
+.home.about .top-section.about .btn a {
   color: #FFFFFF;
 }
 @media (min-width: 800px) {
-  .home.about .top-section .btn {
+  .home.about .top-section.about .btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -674,24 +619,24 @@ p {
   }
 }
 @media (min-width: 800px) {
-  .home.about .top-section {
+  .home.about .top-section.about {
     height: 50vh;
     padding: 6rem;
   }
 }
 @media (min-width: 1000px) {
-  .home.about .top-section {
+  .home.about .top-section.about {
     height: 60vh;
   }
 }
-.home.about .gallery {
+.home.about .gallery.about {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
   width: 80%;
 }
-.home.about .gallery div {
+.home.about .gallery.about div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -699,44 +644,44 @@ p {
   height: 50vh;
 }
 @media (min-width: 1000px) {
-  .home.about .gallery div img {
+  .home.about .gallery.about div img {
     width: 50%;
   }
-  .home.about .gallery div img:hover {
+  .home.about .gallery.about div img:hover {
     animation-name: img-enlarge;
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
 }
-.home.about .gallery div p {
+.home.about .gallery.about div p {
   text-align: center;
 }
 @media (min-width: 1000px) {
-  .home.about .gallery .upper,
-  .home.about .gallery .lower {
+  .home.about .gallery.about .upper.about,
+  .home.about .gallery.about .lower.about {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 }
-.home.about .gallery .middle {
+.home.about .gallery.about .middle.about {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-evenly;
 }
 @media (min-width: 1000px) {
-  .home.about .gallery .middle {
+  .home.about .gallery.about .middle.about {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 }
-.home.about .gallery img {
+.home.about .gallery.about img {
   width: 100%;
   height: 80%;
   object-fit: contain;
 }
-.home.about .bottom-section {
+.home.about .bottom-section.about {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -745,7 +690,7 @@ p {
   height: 20vh;
   background-color: #DFE6ED;
 }
-.home.about .bottom-section .btn {
+.home.about .bottom-section.about .btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -756,11 +701,11 @@ p {
   color: white;
   border-radius: 12px;
 }
-.home.about .bottom-section .btn a {
+.home.about .bottom-section.about .btn a {
   color: #FFFFFF;
 }
 @media (min-width: 800px) {
-  .home.about .bottom-section .btn {
+  .home.about .bottom-section.about .btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -773,7 +718,7 @@ p {
   }
 }
 @media (min-width: 800px) {
-  .home.about .bottom-section {
+  .home.about .bottom-section.about {
     height: 30vh;
   }
 }
@@ -782,7 +727,7 @@ p {
     background-color: #3928f2;
   }
 }
-.home.about .about-team {
+.about-team {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -797,15 +742,15 @@ p {
   border-radius: 10px;
 }
 @media (min-width: 1000px) {
-  .home.about .about-team {
+  .about-team {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 50%;
   }
 }
-.home.about h2 {
+h2 {
   justify-content: center;
   color: #6558F5;
   width: 35%;
@@ -816,7 +761,7 @@ p {
   align-items: center;
 }
 @media (min-width: 1000px) {
-  .home.about h2 {
+  h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -860,7 +805,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 50%;
   border: 2px solid green;
 }
 .about-content h3 {
@@ -903,7 +848,6 @@ p {
   border: 2px solid #6558F5;
   border-radius: 10px;
 }
-
 @media (min-width: 1000px) {
   .about-item button {
     width: 50%;
@@ -924,34 +868,4 @@ p {
     border: 2px solid black;
     border-radius: 10px;
   }
-
-@phone {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 35rem;
-  margin-left: 3.5rem;
-}
-.container .about-content button:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 25%;
-  font-size: 12px;
-  margin-top: 20px;
-  background: purple;
-  border: 2px solid pink;
-  border-radius: 10px;
-}
-@phone {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 35rem;
-  margin-left: 3.5rem;
-
-body h1 {
-  font-size: 2.5rem;
-
-
 }
