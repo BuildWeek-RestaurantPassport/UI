@@ -1,4 +1,5 @@
 
+
 .home.about{
   a {
     text-decoration: none;
@@ -56,6 +57,148 @@ background-color: @lightgrey;
 
 .gallery {
     .flex(column, space-between);
+
+.home {
+    a {
+        text-decoration: none;
+
+        @media @tablet {
+            font-size: 1.2rem;
+        }
+    }
+
+    background-color: @lightgrey;
+
+    .top-section {
+        background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        padding: 3.5rem;
+        height: 40vh;
+        color: @white;
+
+        .flex(column, space-around);
+        align-items: center;
+
+        h1 {
+            background: @black;
+            &:before {
+                content: "Tired of deciding what to eat?";
+                animation-name: display;
+                animation-duration: 7s;
+                animation-iteration-count: infinite;
+            }
+        }
+
+        .btn {
+            .button(14rem, 3rem);
+
+            a {
+                color: @white;
+            }
+            
+            @media @tablet {
+                .button(21rem, 4.5rem);
+            }
+        }
+
+        @media @tablet {
+            height: 50vh;
+            padding: 6rem;
+        }
+
+        @media @desktop {
+            height: 60vh;
+        }
+    }
+
+    .gallery {
+        .flex(column, space-between);
+        margin: 0 auto;
+        width: 80%;
+
+        div {
+            .flex(column, space-evenly);
+            align-items: center;
+            height: 50vh;
+
+            img {
+                @media @desktop {
+                    width: 50%;
+
+                    &:hover {
+                        animation-name: img-enlarge;
+                        animation-duration: 1s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .upper, .lower {
+            @media @desktop {
+                .flex(row, space-between);
+            }
+        }
+
+        .middle {
+            .flex(column-reverse, space-evenly);
+
+            @media @desktop {
+                .flex(row, space-evenly);
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 80%;
+            object-fit: contain;
+        }
+    }
+
+    .bottom-section {
+        .flex(column, space-around);
+        align-items: center;
+        padding: 0.625rem 0;
+        height: 20vh;
+        background-color: @lightgrey2;
+
+        .btn {
+            .button(10rem, 3rem);
+
+            a {
+                color: @white;
+            }
+
+            @media @tablet {
+                .button(15rem, 4.5rem);
+            }
+        }
+
+        @media @tablet {
+            height: 30vh;
+        }
+    }
+
+    .btn {
+        @media @desktop {
+            &:hover {
+                background-color: darken(@purple, 10%);
+            }
+        }
+    }
+}
+
+.container  {
+    background-color:opaque;
+    max-width: 900px;
+    max-width: 900px;
+
     margin: 0 auto;
     width: 80%;
 
@@ -281,3 +424,4 @@ background-color: @lightgrey;
   
 
   
+
