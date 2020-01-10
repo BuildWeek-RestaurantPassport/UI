@@ -448,9 +448,11 @@ p {
   }
 }
 .home.about .about-team {
-  flex-direction: row;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
   padding: 10px;
   margin: 0 auto;
   margin-top: 30px;
@@ -459,42 +461,56 @@ p {
   background-color: lightgrey;
   border-radius: 10px;
 }
-@phone {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+@media (min-width: 1000px) {
+  .home.about .about-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 }
 .home.about h2 {
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   color: #6558F5;
   width: 35%;
   margin: 0 auto;
-}
-@phone (min-width: 800px) {
+  display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-left: 2.5rem;
-  p {
-    color: black;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .home.about h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
   }
 }
-.home.about .about-content {
-  display: flex;
+.about-content {
   flex-wrap: column;
   justify-content: space-between;
   margin-top: 2px;
   font-family: roboto;
   margin: 10px;
   padding-bottom: 40px;
-}
-@phone (min-width: 800px) {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.home.about .about-content .about-item {
+@media (min-width: 1000px) {
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+.about-content .about-item {
   justify-content: space-between;
   margin: 20px ;
   padding: 20px;
@@ -507,8 +523,12 @@ p {
 @phone (min-width: 800px) {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 2px solid green;
 }
-.home.about .about-content h3 {
+.about-content h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -526,18 +546,18 @@ p {
   width: 35rem;
   margin-left: 3.5rem;
 }
-.home.about .about-content .about-item img {
+.about-content .about-item img {
   border-radius: 50px;
   max-width: 50%;
   margin-left: 20%;
   margin-bottom: 10px;
   border: 1px solid black;
 }
-.home.about .about-content .about-item p {
+.about-content .about-item p {
   line-height: 18px;
   color: #212529;
 }
-.home.about .about-item button {
+.about-item button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -548,13 +568,16 @@ p {
   border: 2px solid #6558F5;
   border-radius: 10px;
 }
-@phone {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 35rem;
-  margin-left: 3.5rem;
-  button:hover {
+@media (min-width: 1000px) {
+  .about-item button {
+    width: 50%;
+  }
+  .about-item button:hover {
+    animation-name: img-enlarge;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  .about-item button:hover button:hover {
     display: flex;
     justify-content: center;
     align-items: center;

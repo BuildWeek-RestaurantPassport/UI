@@ -135,24 +135,22 @@ background-color: @lightgrey;
 }
 
 .about-team {
-  
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-align-items:center;
-padding: 10px;
-margin: 0 auto;
-margin-top: 30px;
-width: 50%;
-color: @darkmagenta;
-background-color: lightgrey;
-border-radius: 10px;
-
-@phone{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  .flex(column, space-around);
   align-items: center;
+ align-items: center;
+ justify-content: space-between;
+ padding: 10px;
+ margin: 0 auto;
+ margin-top: 30px;
+ width: 50%;
+ color: @darkmagenta;
+ background-color: lightgrey;
+ border-radius: 10px;
+
+@media @desktop {
+  .flex(column, space-between);
+  align-items: center;
+  width: 100%;
   }
  }
   
@@ -164,15 +162,14 @@ border-radius: 10px;
    width: 35%;
    margin:0 auto;
    
-    @phone @tablet {
-    flex-direction: column;
-    width: 100%;
-    margin-left: 2.5rem; 
-    
-  p {
-      color: @black;
+   .flex(column, space-evenly);
+   align-items: center; 
+   @media @desktop {
+    .flex(row, space-between);
+    align-items: center;
+    width: 88%;
+     }
     }
-   }
  }
 
 .about-content {
@@ -184,12 +181,13 @@ border-radius: 10px;
   margin: 10px;
   padding-bottom: 40px;
   
-  @phone @tablet {
-    display: flex;
-    flex-wrap: wrap;
-
+  .flex(column, space-around);
+    align-items: center;
+    @media @desktop {
+      .flex(row, space-between);
+       align-items: center;
+       width: 100%;
   }
- 
   .about-item  {
     justify-content: space-between;
     margin: 20px ;
@@ -203,6 +201,10 @@ border-radius: 10px;
     @phone @tablet {
       display: flex;
       flex-wrap: wrap;
+      justify-content:space-between;
+      align-items: center;
+      width: 100%;
+      border: 2px solid green;
      }
   }
   h3 {
@@ -247,27 +249,29 @@ border-radius: 10px;
         border: 2px solid @purple;  
         border-radius: 10px;
 
-       @phone {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 35rem;
-        margin-left: 3.5rem;
+      @media @desktop {
+          width: 50%;
     
+        &:hover {
+              animation-name: img-enlarge;
+              animation-duration: 1s;
+              animation-fill-mode: forwards;
+          
     button:hover  {
-      display: flex;
-      justify-content:center;
-      align-items: center;
-      margin-left: 25%;
-    font-size: 12px;
-    margin-top: 20px;
-    background:@purple;
-    border: 2px solid @black;
-    border-radius: 10px;  
-    }  
-   }
- }
-}
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-left: 25%;
+          font-size: 12px;
+          margin-top: 20px;
+          background:@purple;
+          border: 2px solid @black;
+          border-radius: 10px; 
+           }  
+         }
+      }
+    }
+
 
 
      
