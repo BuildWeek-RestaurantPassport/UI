@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-.home {
+.home.about {
     a {
         text-decoration: none;
 
@@ -10,7 +9,7 @@
 
     background-color: @lightgrey;
 
-    .top-section {
+    .top-section.about {
         background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
         background-repeat: no-repeat;
         background-size: cover;
@@ -54,7 +53,7 @@
         }
     }
 
-    .gallery {
+    .gallery.about {
         .flex(column, space-between);
         margin: 0 auto;
         width: 80%;
@@ -81,13 +80,13 @@
             }
         }
 
-        .upper, .lower {
+        .upper.about, .lower.about {
             @media @desktop {
                 .flex(row, space-between);
             }
         }
 
-        .middle {
+        .middle.about {
             .flex(column-reverse, space-evenly);
 
             @media @desktop {
@@ -102,7 +101,7 @@
         }
     }
 
-    .bottom-section {
+    .bottom-section.about {
         .flex(column, space-around);
         align-items: center;
         padding: 0.625rem 0;
@@ -134,132 +133,153 @@
         }
     }
 }
-=======
-.container  {
-    background-color:opaque;
-    max-width: 900px;
-    max-width: 900px;
-    margin: 0 auto;
-    box-shadow: 10px 10px 5px 20px black;
- 
- 
- .foodie  {
-  width: 100%;
-  height: 400px;
-  background-image: url('img\wp3847007-good-food-wallpapers.jpg');
-  background-size: 100% 100%;
- 
- }
- .about-team {
-  border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 100%;
-  color: @darkmagenta;
-  background-color: rgb(199, 156, 199);
-  
-  
-  
-  @phone {
-    flex-direction: column;
-    width: 35rem;
-    margin-left: 2.5rem; 
-   } 
-  }
 
+
+.about-team {
+  .flex(column, space-around);
+  align-items: center;
+ align-items: center;
+ justify-content: space-between;
+ padding: 10px;
+ margin: 0 auto;
+ margin-top: 30px;
+ width: 50%;
+ color: @darkmagenta;
+ background-color: lightgrey;
+ border-radius: 10px;
+
+@media @desktop {
+  .flex(column, space-between);
+  align-items: center;
+  width: 50%;
+  }
+ }
+  
+ h2 {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: @purple;
+   width: 35%;
+   margin:0 auto;
+   
+   .flex(column, space-evenly);
+   align-items: center; 
+   @media @desktop {
+    .flex(row, space-between);
+    align-items: center;
+    width: 88%;
+     }
+    }
  
- 
- .about-content {
+
+.about-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: column;
   justify-content: space-between;  
    margin-top: 2px;
   font-family: roboto;
-  margin: 30px;
+  margin: 10px;
   padding-bottom: 40px;
-
-  .about-item  {
-      margin: 40px 0 0 0;
-      padding: 20px;
-      border: 1px solid RGB(128, 0, 128);
-      width: 400px;
-      border-radius: 30px;
-      
-      font-family: "Exo", sans-serif;
-      color: @darkmagenta;
-      
-    }
-     h3 {
-       display: flex;
-       flex-direction: row;
-       justify-content:space-evenly;
+  
+  .flex(column, space-around);
+    align-items: center;
+    @media @desktop {
+      .flex(row, space-between);
        align-items: center;
-      margin: 10px;
-      margin-bottom: 10px;
-      margin-top: 3px;
-       color: dodgerblue;
-       
-       font-size: 26px;
+       width: 100%;
+  }
+  .about-item  {
+    justify-content: space-between;
+    margin: 20px ;
+    padding: 20px;
+    border: 1px solid @black;
+    width: 400px;
+    border-radius: 30px;
+    font-family: "Exo", sans-serif;
+    color: @darkmagenta;
+  
+    @phone @tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:space-between;
+      align-items: center;
+      width: 50%;
+      border: 2px solid green;
      }
-     
-     
-    .about-item img {
-      border-radius: 50px;
-      max-width: 50%;
-      margin-left: 20%;
-      margin-bottom: 10px;
-      border: 1px solid @darkmagenta;
-     }
-     .about-item p {
-      line-height: 18px;
-      color:@shark;
-      }
-      .about-item button {
+  }
+  h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    color: dodgerblue;
+    font-size: 26px;
+
+    @phone {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 35rem;
+      margin-left: 3.5rem;
+    }   
+  }
+  .about-item img {
+    border-radius: 50px;
+    max-width: 50%;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    border: 1px solid @black;
+   }
+   .about-item p {
+    line-height: 18px;
+    color:@shark;
+    }
+  }
+ .about-item button {
         display: flex;
         justify-content:center;
         align-items: center;
-        background:#DDA0DD;
+        background:@MEDIUMPURPLE;
         margin-top: 20px;
         font-size: 12px;
         margin-left: 25%;
-        border: 2px solid #FF00FF;  
+        border: 2px solid @purple;  
         border-radius: 10px;
 
-        @phone {
-            flex-direction: column;
-            justify-content: center;
+      @media @desktop {
+          width: 50%;
+    
+        &:hover {
+              animation-name: img-enlarge;
+              animation-duration: 1s;
+              animation-fill-mode: forwards;
+          
+    button:hover  {
+            display: flex;
+            justify-content:center;
             align-items: center;
-            width: 35rem;
-            margin-left: 3.5rem;
-          }   
-        
-      } 
-      button:hover  {
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        margin-left: 25%;
-      font-size: 12px;
-      margin-top: 20px;
-      background: purple;
-      border: 2px solid pink;
-      border-radius: 10px;  
+            margin-left: 25%;
+          font-size: 12px;
+          margin-top: 20px;
+          background:@purple;
+          border: 2px solid @black;
+          border-radius: 10px; 
+           }  
+         }
       }
-      @phone {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 35rem;
-        margin-left: 3.5rem;
-      }   
     }
-   
-  }
+  
+
+
+     
+     
+  
 
   
->>>>>>> df43f0deb3686ba31973b7600835d2f752e4159d
+
+  
+
