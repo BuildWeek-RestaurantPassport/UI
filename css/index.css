@@ -733,7 +733,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
   margin: 0 auto;
   margin-top: 30px;
   width: 50%;
@@ -776,6 +776,7 @@ h2 {
   font-family: roboto;
   margin: 10px;
   padding-bottom: 40px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -834,6 +835,7 @@ h2 {
   border: 1px solid black;
 }
 .about-content .about-item p {
+  text-align: center;
   line-height: 18px;
   color: #212529;
 }
@@ -848,24 +850,14 @@ h2 {
   border: 2px solid #6558F5;
   border-radius: 10px;
 }
-@media (min-width: 1000px) {
-  .about-item button {
-    width: 50%;
-  }
-  .about-item button:hover {
-    animation-name: img-enlarge;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-  .about-item button:hover button:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 25%;
-    font-size: 12px;
-    margin-top: 20px;
-    background: #6558F5;
-    border: 2px solid black;
-    border-radius: 10px;
-  }
+.about-item button:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+  font-size: 12px;
+  margin-top: 20px;
+  background: #6558F5;
+  border: 2px solid black;
+  border-radius: 10px;
 }
