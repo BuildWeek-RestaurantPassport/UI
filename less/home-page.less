@@ -140,7 +140,7 @@
   align-items: center;
  align-items: center;
  justify-content: space-between;
- padding: 10px;
+ padding: 20px;
  margin: 0 auto;
  margin-top: 30px;
  width: 50%;
@@ -181,7 +181,7 @@
   font-family: roboto;
   margin: 10px;
   padding-bottom: 40px;
-  
+  width: 100%;
   .flex(column, space-around);
     align-items: center;
     @media @desktop {
@@ -235,6 +235,7 @@
     border: 1px solid @black;
    }
    .about-item p {
+    text-align: center;
     line-height: 18px;
     color:@shark;
     }
@@ -250,15 +251,8 @@
         border: 2px solid @purple;  
         border-radius: 10px;
 
-      @media @desktop {
-          width: 50%;
-    
-        &:hover {
-              animation-name: img-enlarge;
-              animation-duration: 1s;
-              animation-fill-mode: forwards;
-          
-    button:hover  {
+      
+   &:hover  {
             display: flex;
             justify-content:center;
             align-items: center;
@@ -268,10 +262,10 @@
           background:@purple;
           border: 2px solid @black;
           border-radius: 10px; 
-           }  
-         }
+        }
       }
-    }
+      
+    
   
 
 
