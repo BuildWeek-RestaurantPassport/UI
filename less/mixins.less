@@ -1,3 +1,4 @@
+
 // Mixins in here//
 
     .flex(@direction, @justify) {
@@ -53,4 +54,51 @@
 
 
 
+
+
+
+.flex(@direction, @justify) {
+
+// Mixins in here
+.border() {
+    @border-bottom: 2px dashed @navigation-border;
+    @border: 1px solid seagreen;
+}
+
+ .button (@width, @color, @backGroundColor) {
+     width: @width;
+    color: @color;
+     background-color: @backGroundColor;
+ }
+ /*.flex(@direction, @justify) {
+
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+}
+
+.button(@width, @height) {
+    .flex(row, center);
+    align-items: center;
+    width: @width;
+    height: @height;
+
+    background-color: @purple;
+    color: white;
+    border-radius: 12px;
+}
+
+.button2(@width, @height) {
+    .flex(row, center);
+    align-items: center;
+    width: @width;
+    height: @height;
+    background-color: white;
+    color: @purple;
+}
+
+    background-color: #6558F5;
+    color: white;
+    border-radius: 12px;
+}*/
 
