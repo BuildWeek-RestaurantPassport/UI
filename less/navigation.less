@@ -1,3 +1,4 @@
+// INDEX PAGE NAVIGATION
 .home.index nav {
     .flex(column, space-around);
     align-items: center;
@@ -54,6 +55,193 @@
                 opacity: 0.25;
             }
     
+            &:hover a:hover {
+                opacity: 1.0;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        background-color: lighten(purple, 5%);
+        color: @white;
+    }
+}
+
+// ABOUT PAGE NAVIGATION
+.home.about nav {
+    .flex(column, space-around);
+    align-items: center;
+    padding: 0.5rem 0;
+    background-color: @lightgrey2;
+
+
+    .home nav {
+        .flex(column, space-around);
+        align-items: center;
+        padding: 0.5rem 0;
+        background-color: @lightgrey2;
+
+        @media @tablet {
+            .flex(row, space-around);
+            padding: 0;
+        }
+
+        span {
+            font-size: 3rem;
+        }
+
+        .links {
+            .flex(column, space-around);
+            align-items: center;
+            height: 18rem;
+            margin-top: 1rem;
+            width: 100%;
+
+            @media @tablet {
+            width: 55%;
+            height: 8rem;
+            margin-top: 0;
+            .flex(row, space-between);
+        }
+
+        a {
+            color: @black;
+            font-size: 1.5rem;
+
+            &:nth-child(3) {
+                .flex(row, center);
+                align-items: center;
+                border: 1px solid @purple;
+                height: 2.5rem;
+                width: 8rem;
+                color: @purple;
+            }
+        }
+
+        .btn {
+            .button(11rem, 3rem);
+
+            a {
+                color: @white;
+            }
+        }
+
+        @media @desktop {
+            &:hover a {
+                opacity: 0.25;
+            }
+
+            &:hover a:hover {
+                opacity: 1.0;
+            }
+        }
+    }
+
+        p {
+            text-align: center;
+            background-color: lighten(purple, 5%);
+            color: @white;
+        }
+    }
+
+    .top-content header h1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 28px;
+        padding: 10px;
+        border: 3px solid black;
+        font-family: "Exo", sans-serif;
+        color:@shark;
+        background-color: silver;
+        // @phone {
+        // display: flex;
+        // color: yellow;
+        // }
+        color: yellow;
+        
+        .top-content  nav  {
+            border-radius: 10px;
+            padding:10px;
+            margin: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            justify-content: space-between;
+            align-items: center;
+            background-color:blueviolet;
+            color: @white;
+            border: 1px solid black;
+            padding:5px;
+            border-radius: 10px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+            justify-content: space-between;
+            align-items: center;
+            background-color:@white;
+            color: blueviolet;
+            border: 1px solid black;
+            padding:5px;
+            border-radius: 10px;
+        }
+
+    }  
+
+    @media @tablet {
+        .flex(row, space-around);
+        padding: 0;
+    }
+
+    span {
+        font-size: 3rem;
+    }
+
+    .links {
+        .flex(column, space-around);
+        align-items: center;
+        height: 18rem;
+        margin-top: 1rem;
+        width: 100%;
+
+        @media @tablet {
+            width: 55%;
+            height: 8rem;
+            margin-top: 0;
+            .flex(row, space-between);
+        }
+
+        a {
+            color: @black;
+            font-size: 1.5rem;
+
+            &:nth-child(3) {
+                .flex(row, center);
+                align-items: center;
+                border: 1px solid @purple;
+                height: 2.5rem;
+                width: 8rem;
+                color: @purple;
+            }
+        }
+
+        .btn {
+            .button(11rem, 3rem);
+
+            a {
+                color: @white;
+            }
+        }
+
+        @media @desktop {
+            &:hover a {
+                opacity: 0.25;
+            }
+
             &:hover a:hover {
                 opacity: 1.0;
             }

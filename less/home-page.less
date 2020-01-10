@@ -1,3 +1,4 @@
+// INDEX PAGE HOME PAGE
 .home.index {
     a {
         text-decoration: none;
@@ -130,6 +131,279 @@
             &:hover {
                 background-color: darken(@purple, 10%);
             }
+        }
+    }
+}
+
+// ABOUT PAGE HOME PAGE
+.home.about {
+    a {
+        text-decoration: none;
+
+        @media @tablet {
+            font-size: 1.2rem;
+        }
+    }
+
+    background-color: @lightgrey;
+
+    .top-section.about {
+        background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        padding: 3.5rem;
+        height: 40vh;
+        color: @white;
+
+        .flex(column, space-around);
+        align-items: center;
+
+        h1 {
+            background: @black;
+            &:before {
+                content: "Tired of deciding what to eat?";
+                animation-name: display;
+                animation-duration: 7s;
+                animation-iteration-count: infinite;
+            }
+        }
+
+        .btn {
+            .button(14rem, 3rem);
+
+            a {
+                color: @white;
+            }
+            
+            @media @tablet {
+                .button(21rem, 4.5rem);
+            }
+        }
+
+        @media @tablet {
+            height: 50vh;
+            padding: 6rem;
+        }
+
+        @media @desktop {
+            height: 60vh;
+        }
+    }
+
+    .gallery.about {
+        .flex(column, space-between);
+        margin: 0 auto;
+        width: 80%;
+
+        div {
+            .flex(column, space-evenly);
+            align-items: center;
+            height: 50vh;
+
+            img {
+                @media @desktop {
+                    width: 50%;
+
+                    &:hover {
+                        animation-name: img-enlarge;
+                        animation-duration: 1s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .upper.about, .lower.about {
+            @media @desktop {
+                .flex(row, space-between);
+            }
+        }
+
+        .middle.about {
+            .flex(column-reverse, space-evenly);
+
+            @media @desktop {
+                .flex(row, space-evenly);
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 80%;
+            object-fit: contain;
+        }
+    }
+
+    .bottom-section.about {
+        .flex(column, space-around);
+        align-items: center;
+        padding: 0.625rem 0;
+        height: 20vh;
+        background-color: @lightgrey2;
+
+        .btn {
+            .button(10rem, 3rem);
+
+            a {
+                color: @white;
+            }
+
+            @media @tablet {
+                .button(15rem, 4.5rem);
+            }
+        }
+
+        @media @tablet {
+            height: 30vh;
+        }
+    }
+
+    .btn {
+        @media @desktop {
+            &:hover {
+                background-color: darken(@purple, 10%);
+            }
+        }
+    }
+    .about-team {
+        .flex(column, space-around);
+        align-items: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 50%;
+        color: @darkmagenta;
+        background-color: lightgrey;
+        border-radius: 10px;
+    
+        @media @desktop {
+        .flex(column, space-between);
+        align-items: center;
+        width: 50%;
+        }
+    }
+    
+    h2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: @purple;
+        width: 35%;
+        margin:0 auto;
+
+        .flex(column, space-evenly);
+        align-items: center; 
+
+        @media @desktop {
+            .flex(row, space-between);
+            align-items: center;
+            width: 88%;
+        }
+    }
+
+    .about-content {
+        display: flex;
+        flex-flow: column wrap; // wrapped content to get rid of horizontal scrollbars
+        justify-content: space-between;  
+        margin-top: 2px;
+        font-family: roboto;
+        margin: 10px;
+        padding-bottom: 40px;
+        width: 100%;
+        .flex(column, space-around);
+        align-items: center;
+
+        @media @desktop {
+            .flex(row, space-between);
+            align-items: center;
+            width: 100%;
+        }
+
+        .about-item  {
+            justify-content: space-between;
+            margin: 20px ;
+            padding: 20px;
+            border: 1px solid @black;
+            width: 400px;
+            border-radius: 30px;
+            font-family: "Exo", sans-serif;
+            color: @darkmagenta;
+
+            @media @tablet {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:space-between;
+                align-items: center;
+                width: 50%;
+                border: 2px solid purple;
+            }
+
+            @media @desktop {
+                width: 20vw;
+            }
+        }
+
+        h3 {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            align-items: center;
+            margin: 10px;
+            margin-bottom: 10px;
+            margin-top: 3px;
+            color: dodgerblue;
+            font-size: 26px;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 35rem;
+            margin-left: 3.5rem; 
+        }
+
+        .about-item img {
+            border-radius: 50px;
+            max-width: 50%;
+            margin-left: 20%;
+            margin-bottom: 10px;
+            border: 1px solid @black;
+        }
+        .about-item p {
+            text-align: center;
+            line-height: 18px;
+            color:@shark;
+        }
+    }
+
+    .about-item button {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        background:@MEDIUMPURPLE;
+        margin-top: 20px;
+        font-size: 12px;
+        margin-left: 25%;
+        border: 2px solid @purple;  
+        border-radius: 10px;
+
+
+        &:hover {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-left: 25%;
+            font-size: 12px;
+            margin-top: 20px;
+            background:@purple;
+            border: 2px solid @black;
+            border-radius: 10px; 
         }
     }
 }
